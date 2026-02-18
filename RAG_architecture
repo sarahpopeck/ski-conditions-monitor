@@ -1,12 +1,12 @@
 # Import libraries as necessary (LLM models, preprocessing, sentence transformers)
 import os
+import json
 import numpy as np
 import ollama
 import json
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
-VECTOR_DIM = 384
 CHUNK_SIZE = 300
 OVERLAP = 50
 
@@ -21,8 +21,8 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 QUESTION = "Is this a good day to go skiing?"
 
-# In-memory storage for embeddings (rather than using Redis)
-vector_store = []
+# Load embedding model once
+embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 
 # Splits long text into smaller overlapping chunks
 def split_text_into_chunks(text, chunk_size=CHUNK_SIZE, overlap=OVERLAP):
@@ -33,45 +33,43 @@ def split_text_into_chunks(text, chunk_size=CHUNK_SIZE, overlap=OVERLAP):
         chunks.append(chunk)
     return chunks
 
-
-# Load embedding model 
-embedding_model = SentenceTransformer(EMBEDDING_MODEL)
-
+# Generates embedding
 def get_embedding(text: str):
     return embedding_model.encode(text)
 
-
 # Ingests mixed data sources (API data, text, etc.)
-def ingest_data(source_name: str, raw_data):
+def ingest_day_data(day_data):
 
-    # Convert dict or list to string format
-    if isinstance(raw_data, (dict, list)):
-        text = json.dumps(raw_data)
-    else:
-        text = str(raw_data)
+    vector_store = []
 
-    chunks = split_text_into_chunks(text)
+    for source_name, raw_data in day_data.items():
 
-    for chunk in chunks:
-        embedding = get_embedding(chunk)
+        # Convert dict or list to string format
+        if isinstance(raw_data, (dict, list)):
+            text = json.dumps(raw_data)
+        else:
+            text = str(raw_data)
 
-        vector_store.append({
-            "source": source_name,
-            "chunk": chunk,
-            "embedding": embedding
-        })
+        chunks = split_text_into_chunks(text)
 
-    print(f"Ingested source: {source_name}")
+        for chunk in chunks:
+            embedding = get_embedding(chunk)
 
-# Use cosine similarity to create embeddings
-# Rate the resort and expert testimony a bit higher
-def search_embeddings(query, top_k=6):
+            vector_store.append({
+                "source": source_name,
+                "chunk": chunk,
+                "embedding": embedding
+            })
+
+    return vector_store
+
+# Searches embeddings using cosine similarity
+def search_embeddings(query, vector_store, top_k=6):
 
     if not vector_store:
         return []
 
     query_embedding = get_embedding(query)
-
     similarities = []
 
     for item in vector_store:
@@ -119,12 +117,6 @@ Question:
 Data:
 {context_str}
 
-When reasoning:
-- Use Open-Meteo for snow totals, wind, temperature.
-- Use NWS for forecast confidence and hazards.
-- Use Reddit for real-time confirmation or contradiction.
-- Use OpenSnow for resort-level impact.
-
 Provide:
 1) A clear YES or NO
 2) 3–5 sentences explaining why.
@@ -137,7 +129,7 @@ Provide:
 
     return response["message"]["content"]
 
-# Uses an LLM to summarize the two prior LLM's responses to the question
+# Uses an LLM to summarize the two prior LLM's responses
 def summarize_conclusions(mistral_answer, llama_answer):
 
     prompt = f"""
@@ -149,9 +141,9 @@ Expert 1 (Mistral):
 Expert 2 (Llama2):
 {llama_answer}
 
-Determine:
-- What is the final recommendation as a YES or NO answer?
-- Provide exactly 3 sentences summarizing their reasoning.
+Provide:
+- Final YES or NO
+- Exactly 3 sentences summarizing the reasoning.
 """
 
     response = ollama.chat(
@@ -161,39 +153,28 @@ Determine:
 
     return response["message"]["content"]
 
-# Main function to ingest data and run evaluation
-def run_pipeline(data_sources):
+# Main evaluation function for one day
+def evaluate_day(day_data):
 
-    global vector_store
-    vector_store = []
+    vector_store = ingest_day_data(day_data)
 
-    # Ingest data sources (forecast, reddit, resort, weather
-    for name, data in data_sources.items():
-        ingest_data(name, data)
+    context = search_embeddings(QUESTION, vector_store)
 
-    context = search_embeddings(QUESTION)
-
-    #query mistral
     mistral_answer = generate_rag_response(
         QUESTION, context, LLM_MODELS["mistral"]
     )
-    
 
-    # query llama
     llama_answer = generate_rag_response(
         QUESTION, context, LLM_MODELS["llama2"]
     )
 
-    final = summarize_conclusions(mistral_answer, llama_answer)
+    final_decision = summarize_conclusions(
+        mistral_answer, llama_answer
+    )
 
-    print("\n===========================")
-    print(" FINAL SKI DECISION ")
-    print("===========================\n")
-    print(final)
-
-# TODO: adjust data sources so it pulls everything as necessary
-if __name__ == "__main__":
-
-    data_sources = {}
-
-    run_pipeline(data_sources)
+    return {
+        "mistral": mistral_answer,
+        "llama2": llama_answer,
+        "final": final_decision,
+        "context": context
+    }
