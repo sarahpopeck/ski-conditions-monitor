@@ -1,0 +1,199 @@
+# Import libraries as necessary (LLM models, preprocessing, sentence transformers)
+import os
+import numpy as np
+import ollama
+import json
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+
+VECTOR_DIM = 384
+CHUNK_SIZE = 300
+OVERLAP = 50
+
+# To obtain a rounded answer, we are using two LLMs for answers, and a third to summarize the two responses
+LLM_MODELS = {
+    "mistral": "mistral:latest",
+    "llama2": "llama2",
+}
+
+SUMMARY_MODEL = "phi3:latest"
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+
+QUESTION = "Is this a good day to go skiing?"
+
+# In-memory storage for embeddings (rather than using Redis)
+vector_store = []
+
+# Splits long text into smaller overlapping chunks
+def split_text_into_chunks(text, chunk_size=CHUNK_SIZE, overlap=OVERLAP):
+    words = text.split()
+    chunks = []
+    for i in range(0, len(words), chunk_size - overlap):
+        chunk = " ".join(words[i:i+chunk_size])
+        chunks.append(chunk)
+    return chunks
+
+
+# Load embedding model 
+embedding_model = SentenceTransformer(EMBEDDING_MODEL)
+
+def get_embedding(text: str):
+    return embedding_model.encode(text)
+
+
+# Ingests mixed data sources (API data, text, etc.)
+def ingest_data(source_name: str, raw_data):
+
+    # Convert dict or list to string format
+    if isinstance(raw_data, (dict, list)):
+        text = json.dumps(raw_data)
+    else:
+        text = str(raw_data)
+
+    chunks = split_text_into_chunks(text)
+
+    for chunk in chunks:
+        embedding = get_embedding(chunk)
+
+        vector_store.append({
+            "source": source_name,
+            "chunk": chunk,
+            "embedding": embedding
+        })
+
+    print(f"Ingested source: {source_name}")
+
+# Use cosine similarity to create embeddings
+# Rate the resort and expert testimony a bit higher
+def search_embeddings(query, top_k=6):
+
+    if not vector_store:
+        return []
+
+    query_embedding = get_embedding(query)
+
+    similarities = []
+
+    for item in vector_store:
+        score = cosine_similarity(
+            [query_embedding],
+            [item["embedding"]]
+        )[0][0]
+
+        # Slightly weight expert and resort sources higher
+        if item["source"] in ["opensnow_resort", "nws_discussion"]:
+            score *= 1.10
+
+        similarities.append({
+            "source": item["source"],
+            "chunk": item["chunk"],
+            "similarity": score
+        })
+
+    similarities.sort(key=lambda x: x["similarity"], reverse=True)
+
+    return similarities[:top_k]
+
+# Function that prompts both LLM models for their ski prediction
+def generate_rag_response(query, context_results, llm_model):
+
+    context_str = "\n\n".join(
+        [f"[Source: {c['source']}]\n{c['chunk']}" for c in context_results]
+    )
+
+    prompt = f"""
+You are a ski conditions analyst.
+
+You are evaluating today's ski quality using multiple data sources:
+
+- Open-Meteo: numerical forecast model data
+- National Weather Service Discussion: expert meteorologist interpretation
+- Reddit Ski Reports: real-time skier sentiment
+- OpenSnow Resort Data: ski-specific operational forecast
+
+Use ONLY the provided data below.
+
+Question:
+{query}
+
+Data:
+{context_str}
+
+When reasoning:
+- Use Open-Meteo for snow totals, wind, temperature.
+- Use NWS for forecast confidence and hazards.
+- Use Reddit for real-time confirmation or contradiction.
+- Use OpenSnow for resort-level impact.
+
+Provide:
+1) A clear YES or NO
+2) 3–5 sentences explaining why.
+"""
+
+    response = ollama.chat(
+        model=llm_model,
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    return response["message"]["content"]
+
+# Uses an LLM to summarize the two prior LLM's responses to the question
+def summarize_conclusions(mistral_answer, llama_answer):
+
+    prompt = f"""
+Two ski experts evaluated today's conditions.
+
+Expert 1 (Mistral):
+{mistral_answer}
+
+Expert 2 (Llama2):
+{llama_answer}
+
+Determine:
+- What is the final recommendation as a YES or NO answer?
+- Provide exactly 3 sentences summarizing their reasoning.
+"""
+
+    response = ollama.chat(
+        model=SUMMARY_MODEL,
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    return response["message"]["content"]
+
+# Main function to ingest data and run evaluation
+def run_pipeline(data_sources):
+
+    global vector_store
+    vector_store = []
+
+    # Ingest data sources (forecast, reddit, resort, weather
+    for name, data in data_sources.items():
+        ingest_data(name, data)
+
+    context = search_embeddings(QUESTION)
+
+    #query mistral
+    mistral_answer = generate_rag_response(
+        QUESTION, context, LLM_MODELS["mistral"]
+    )
+    
+
+    # query llama
+    llama_answer = generate_rag_response(
+        QUESTION, context, LLM_MODELS["llama2"]
+    )
+
+    final = summarize_conclusions(mistral_answer, llama_answer)
+
+    print("\n===========================")
+    print(" FINAL SKI DECISION ")
+    print("===========================\n")
+    print(final)
+
+# TODO: adjust data sources so it pulls everything as necessary
+if __name__ == "__main__":
+
+    data_sources = {}
+
+    run_pipeline(data_sources)
