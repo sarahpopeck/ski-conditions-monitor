@@ -1,0 +1,382 @@
+[
+  {
+    "id": "e26df9f2-aeab-4aa9-b0bc-9b76e6cb0cc1",
+    "name": "North Ridge Quad",
+    "sector": {
+      "uuid": "c5844fd1-feea-4cd1-9056-f514fb736af9",
+      "name": "North Ridge Area"
+    },
+    "type": "quad",
+    "vertical": "587",
+    "notes": "",
+    "hours": "9:30 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534522,
+    "weight": 0
+  },
+  {
+    "id": "3efb6a4c-215d-4c52-82e9-a6febb1c5972",
+    "name": "Sunrise Village Triple",
+    "sector": {
+      "uuid": "a3d40b77-c7d6-4f35-970a-4e81e36f1fb8",
+      "name": "Sunrise"
+    },
+    "type": "triple",
+    "vertical": "434",
+    "notes": "",
+    "hours": "9:00 - 3:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534523,
+    "weight": 0
+  },
+  {
+    "id": "b2728f06-09a7-4318-942d-74fa5b848996",
+    "name": "South Ridge Quad",
+    "sector": {
+      "uuid": "e0ff1771-1c67-4ac4-9360-f27410c8a30e",
+      "name": "South Ridge Area"
+    },
+    "type": "quad",
+    "vertical": "863",
+    "notes": "",
+    "hours": "10:00 - 3:30",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534523,
+    "weight": 0
+  },
+  {
+    "id": "457aeb9e-f88d-4539-bd65-959221d6a83d",
+    "name": "Bear Mountain Quad",
+    "sector": {
+      "uuid": "6b084cb8-7134-446a-a305-22f4fab0a736",
+      "name": "Bear Mountain"
+    },
+    "type": "quad",
+    "vertical": "1148",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534520,
+    "weight": 0
+  },
+  {
+    "id": "6bdcb3ec-ffe4-4675-9457-736d3338b4a3",
+    "name": "Snowshed Express Quad",
+    "sector": {
+      "uuid": "796033fe-4c8b-4961-bf92-69cdc201b443",
+      "name": "Snowshed"
+    },
+    "type": "quad",
+    "vertical": "560",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "all",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534523,
+    "weight": 0
+  },
+  {
+    "id": "7fc49069-b469-4850-89bc-a25e0177cf0a",
+    "name": "Snowshed  Double",
+    "sector": {
+      "uuid": "796033fe-4c8b-4961-bf92-69cdc201b443",
+      "name": "Snowshed"
+    },
+    "type": "double",
+    "vertical": "527",
+    "notes": "",
+    "hours": "",
+    "season": "winter",
+    "status": "closed",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534523,
+    "weight": 0
+  },
+  {
+    "id": "f51c7531-44d3-4061-a689-fda78f374066",
+    "name": "Learn To Carpet",
+    "sector": {
+      "uuid": "796033fe-4c8b-4961-bf92-69cdc201b443",
+      "name": "Snowshed"
+    },
+    "type": "carpet",
+    "vertical": "49",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534521,
+    "weight": 0
+  },
+  {
+    "id": "4038de3b-0181-4fe5-85ec-2a81d611dcc1",
+    "name": "Ramshead Express Quad",
+    "sector": {
+      "uuid": "07a2532b-821d-474d-b00f-0ce1d57181b4",
+      "name": "Ramshead"
+    },
+    "type": "quad",
+    "vertical": "1073",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "all",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715040,
+    "updated": 1771534522,
+    "weight": 0
+  },
+  {
+    "id": "02c3d3fc-73b1-4b1e-87dd-0697999c3dfe",
+    "name": "Progression Carpet I",
+    "sector": {
+      "uuid": "07a2532b-821d-474d-b00f-0ce1d57181b4",
+      "name": "Ramshead"
+    },
+    "type": "carpet",
+    "vertical": "11",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534522,
+    "weight": 0
+  },
+  {
+    "id": "8aedd152-7a9f-4583-8da3-1fd531f4c3df",
+    "name": "Canyon Quad",
+    "sector": {
+      "uuid": "ee0267e7-ef08-442f-bab2-da8575603500",
+      "name": "Canyon Area"
+    },
+    "type": "quad",
+    "vertical": "1193",
+    "notes": "",
+    "hours": "10:00 - 3:30",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534521,
+    "weight": 0
+  },
+  {
+    "id": "691e3347-f75d-423c-ac91-b3c3212500b0",
+    "name": "K-1 Express Gondola",
+    "sector": {
+      "uuid": "021015b2-e856-428b-b3aa-91b811e32823",
+      "name": "Killington Peak"
+    },
+    "type": "gondola",
+    "vertical": "1642",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "all",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534521,
+    "weight": 0
+  },
+  {
+    "id": "39037216-ff18-4cd5-98d1-eff034a5ef50",
+    "name": "Snowdon Triple",
+    "sector": {
+      "uuid": "8af9b4a0-c16a-4b23-b35a-095b28178774",
+      "name": "Snowdon"
+    },
+    "type": "triple",
+    "vertical": "1058",
+    "notes": "",
+    "hours": "",
+    "season": "winter",
+    "status": "closed",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534523,
+    "weight": 0
+  },
+  {
+    "id": "507cb967-77d5-4271-bbd0-0427d1f47028",
+    "name": "Snowdon Six Express",
+    "sector": {
+      "uuid": "8af9b4a0-c16a-4b23-b35a-095b28178774",
+      "name": "Snowdon"
+    },
+    "type": "six_person",
+    "vertical": "1114",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534522,
+    "weight": 0
+  },
+  {
+    "id": "cb4229ba-90d5-4eac-a9e1-da53490fd57b",
+    "name": "Superstar Six",
+    "sector": {
+      "uuid": "77b2bfce-6af8-4e2c-832b-c519eedeb768",
+      "name": "Skye Peak"
+    },
+    "type": "six_person",
+    "vertical": "1199",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534523,
+    "weight": 0
+  },
+  {
+    "id": "36f00cdd-6dd7-4111-b367-99f93df7363c",
+    "name": "Skyeship Express Gondola Stage II",
+    "sector": {
+      "uuid": "77b2bfce-6af8-4e2c-832b-c519eedeb768",
+      "name": "Skye Peak"
+    },
+    "type": "gondola",
+    "vertical": "1342",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534522,
+    "weight": 0
+  },
+  {
+    "id": "2a7eb757-37c6-4db2-b994-7c19376bfcc9",
+    "name": "Skyeship Express Gondola Stage I",
+    "sector": {
+      "uuid": "77b2bfce-6af8-4e2c-832b-c519eedeb768",
+      "name": "Skye Peak"
+    },
+    "type": "gondola",
+    "vertical": "1178",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534522,
+    "weight": 0
+  },
+  {
+    "id": "aef566eb-0c57-4c24-9f8a-e9ceb678cb07",
+    "name": "Skye Peak Express Quad",
+    "sector": {
+      "uuid": "77b2bfce-6af8-4e2c-832b-c519eedeb768",
+      "name": "Skye Peak"
+    },
+    "type": "quad",
+    "vertical": "1525",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534522,
+    "weight": 0
+  },
+  {
+    "id": "c534bc5f-0288-40dd-a0cb-d950f8739bdc",
+    "name": "Northbrook Quad",
+    "sector": {
+      "uuid": "77b2bfce-6af8-4e2c-832b-c519eedeb768",
+      "name": "Skye Peak"
+    },
+    "type": "quad",
+    "vertical": "401",
+    "notes": "",
+    "hours": "9:00 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534522,
+    "weight": 0
+  },
+  {
+    "id": "9fec71b2-5b6c-46c2-a96c-832a05ca19c6",
+    "name": "Needles Eye Express Quad",
+    "sector": {
+      "uuid": "77b2bfce-6af8-4e2c-832b-c519eedeb768",
+      "name": "Skye Peak"
+    },
+    "type": "quad",
+    "vertical": "971",
+    "notes": "",
+    "hours": "9:00 - 3:30",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1729715085,
+    "updated": 1771534522,
+    "weight": 0
+  }
+]
