@@ -3,3 +3,8 @@ numpy
 ollama
 sentence-transformers
 scikit-learn
+certifi==2026.1.4
+charset-normalizer==3.4.4
+idna==3.11
+requests==2.32.5
+urllib3==2.6.3
