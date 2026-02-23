@@ -137,29 +137,33 @@ def search_embeddings(resort, day, query, top_k=6):
 
     query_embedding = get_embedding(query)
 
-    q = (
-        f"(@resort:{{{resort}}} @day:{{{day}}})=>"
-        f"[KNN {top_k} @embedding $vec AS score]"
-    )
+    # Simple filter — no fancy KNN DSL
+    query_string = f"@resort:{{{resort}}} @day:{{{day}}}"
 
     results = r.ft(INDEX_NAME).search(
-        q,
-        query_params={"vec": query_embedding.tobytes()},
-        sort_by="score",
-        return_fields=["source", "chunk", "score"],
-        dialect=2
+        query_string,
+        query_params={
+            "vec": query_embedding.tobytes()
+        }
     )
 
     context = []
 
+    # If no results found, return empty safely
+    if not results or not hasattr(results, "docs"):
+        return []
+
     for doc in results.docs:
         context.append({
-            "source": doc.source.decode(),
-            "chunk": doc.chunk.decode(),
-            "score": float(doc.score)
+            "source": getattr(doc, "source", ""),
+            "chunk": getattr(doc, "chunk", ""),
+            "score": getattr(doc, "score", 0)
         })
 
-    return context
+    # Sort manually (we do NOT rely on Redis sorting)
+    context = sorted(context, key=lambda x: x["score"], reverse=True)
+
+    return context[:top_k]
 
 # Generate LLM response
 
@@ -284,3 +288,7 @@ def evaluate_all_resorts(day, all_resort_data):
         "per_resort": results,
         "best_resort_decision": best
     }
+
+analyze_resort_day = evaluate_resort_day
+run_full_daily_analysis = evaluate_all_resorts
+determine_best_resort = pick_best_resort
