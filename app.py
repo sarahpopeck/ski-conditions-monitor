@@ -1,48 +1,114 @@
 import streamlit as st
-from RAG_architecture import evaluate_day
 from datetime import datetime, timedelta
 
+# Import updated engine
+from RAG_architecture import (
+    analyze_resort_day,
+    run_full_daily_analysis,
+    determine_best_resort,
+    RESORT_MODELS
+)
+
 st.set_page_config(layout="wide")
+st.title("Ski Intelligence Dashboard")
+st.markdown("### Multi-Resort 7-Day Condition Analyzer")
 
-st.title("7-Day Ski Condition Evaluator")
+# Resort selection
 
-st.write("Each tab displays forecast data and LLM recommendations for that day.")
+available_resorts = list(RESORT_MODELS.keys())
 
-# Generate next 7 dates starting today
+selected_resorts = st.multiselect(
+    "Select Resorts",
+    available_resorts,
+    default=available_resorts[:3]
+)
+
+if not selected_resorts:
+    st.warning("Select at least one resort.")
+    st.stop()
+
+# Generate the next 7 days as a date string
+
 today = datetime.today()
+
 date_list = [
-    (today + timedelta(days=i)).strftime("%B %d, %Y")
+    (today + timedelta(days=i)).strftime("%Y-%m-%d")
     for i in range(7)
 ]
 
-# Replace with real API data mapped by date
-seven_day_data = {date: {} for date in date_list}
+# Placeholder for the real forecast data (WIP TBD)
+all_resort_data = {}
 
-tabs = st.tabs(date_list)
+for resort in selected_resorts:
+    all_resort_data[resort] = {
+        day: {} for day in date_list
+    }
 
-for i, date in enumerate(date_list):
+# Run the analysis of best resort overal
 
-    with tabs[i]:
+st.markdown("---")
+st.subheader("Global Best Resort (AI Consensus)")
 
-        st.header(f"{date} Forecast Overview")
+if st.button("Run Global Analysis"):
 
-        day_data = seven_day_data[date]
+    with st.spinner("Running multi-resort analysis..."):
 
-        if not day_data:
-            st.info("No data available for this day.")
-            continue
+        results = run_full_daily_analysis(
+            day=date_list[0],  # today for global ranking
+            all_resort_data=all_resort_data
+        )
 
-        st.subheader("Raw Forecast Data")
-        st.json(day_data)
+        best = determine_best_resort(results["per_resort"])
 
-        with st.spinner("Analyzing ski conditions..."):
-            results = evaluate_day(day_data)
+        st.success("Analysis Complete")
 
-        st.subheader("Mistral Recommendation")
-        st.write(results["mistral"])
+        st.markdown("### 🏆 Best Resort Decision")
+        st.write(best)
 
-        st.subheader("Llama2 Recommendation")
-        st.write(results["llama2"])
+        st.markdown("### Individual Resort Decisions")
 
-        st.subheader("Final LLM Decision")
-        st.success(results["final"])
+        for r in results["per_resort"]:
+            st.markdown(f"#### {r['resort']}")
+            st.write(r["final_resort_decision"])
+
+# Individual resort analysis
+
+st.markdown("---")
+st.subheader("Resort Breakdown")
+
+for resort in selected_resorts:
+
+    st.markdown(f"## {resort}")
+
+    tabs = st.tabs(date_list)
+
+    for i, day in enumerate(date_list):
+
+        with tabs[i]:
+
+            st.markdown(f"### {day}")
+
+            day_data = all_resort_data[resort][day]
+
+            if not day_data:
+                st.info("No forecast data loaded yet.")
+                continue
+
+            st.json(day_data)
+
+            with st.spinner("Analyzing conditions..."):
+
+                result = analyze_resort_day(
+                    resort=resort,
+                    day=day,
+                    day_data=day_data
+                )
+
+            st.markdown("### Analyst Outputs")
+
+            for idx, analyst_output in enumerate(result["analyst_outputs"]):
+                st.markdown(f"**Analyst {idx+1}**")
+                st.write(analyst_output)
+
+            st.markdown("### Final Resort Decision")
+            st.success(result["final_resort_decision"])
