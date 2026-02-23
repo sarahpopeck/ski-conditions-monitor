@@ -12,20 +12,33 @@ import re
 from airflow.utils.task_group import TaskGroup
 
 JOB_IDS = [
+    # Reportpal
     "Loon:reportpal",
     "SundayRiver:reportpal",
     "Sugarloaf:reportpal",
 
+    # Killington
     "Killington:trails",
     "Killington:lifts",
     "Killington:snow_reports",
 
+    # Pico
     "Pico:trails",
     "Pico:lifts",
     "Pico:snow_reports",
 
+    # MountainPowder
     "Sugarbush:feed",
     "Stratton:feed",
+
+    # Open-Meteo Forecasts (NEW)
+    "Loon:forecast",
+    "SundayRiver:forecast",
+    "Sugarloaf:forecast",
+    "Killington:forecast",
+    "Pico:forecast",
+    "Sugarbush:forecast",
+    "Stratton:forecast",
 ]
 
 local_tz = pendulum.timezone("America/New_York")
