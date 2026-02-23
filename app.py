@@ -5,15 +5,15 @@ from datetime import datetime, timedelta
 from RAG_architecture import (
     analyze_resort_day,
     run_full_daily_analysis,
-    determine_best_resort,
+    pick_best_resort,
     RESORT_MODELS
 )
 
 st.set_page_config(layout="wide")
-st.title("Ski Intelligence Dashboard")
+st.title("❄️ Ski Intelligence Dashboard")
 st.markdown("### Multi-Resort 7-Day Condition Analyzer")
 
-# Resort selection
+# Select the resort options
 
 available_resorts = list(RESORT_MODELS.keys())
 
@@ -27,7 +27,7 @@ if not selected_resorts:
     st.warning("Select at least one resort.")
     st.stop()
 
-# Generate the next 7 days as a date string
+# Generate the next 7 date strings
 
 today = datetime.today()
 
@@ -36,15 +36,14 @@ date_list = [
     for i in range(7)
 ]
 
-# Placeholder for the real forecast data (WIP TBD)
-all_resort_data = {}
+# Placeholder for our data, TBD
 
-for resort in selected_resorts:
-    all_resort_data[resort] = {
-        day: {} for day in date_list
-    }
+all_resort_data = {
+    resort: {day: {} for day in date_list}
+    for resort in selected_resorts
+}
 
-# Run the analysis of best resort overal
+# Analysis to determine best ski resort to go to
 
 st.markdown("---")
 st.subheader("Global Best Resort (AI Consensus)")
@@ -54,15 +53,15 @@ if st.button("Run Global Analysis"):
     with st.spinner("Running multi-resort analysis..."):
 
         results = run_full_daily_analysis(
-            day=date_list[0],  # today for global ranking
+            day=date_list[0],
             all_resort_data=all_resort_data
         )
 
-        best = determine_best_resort(results["per_resort"])
+        best = pick_best_resort(results["per_resort"])
 
         st.success("Analysis Complete")
 
-        st.markdown("### 🏆 Best Resort Decision")
+        st.markdown("### Best Resort Decision")
         st.write(best)
 
         st.markdown("### Individual Resort Decisions")
@@ -71,7 +70,7 @@ if st.button("Run Global Analysis"):
             st.markdown(f"#### {r['resort']}")
             st.write(r["final_resort_decision"])
 
-# Individual resort analysis
+# Resort breakdown
 
 st.markdown("---")
 st.subheader("Resort Breakdown")
@@ -88,7 +87,8 @@ for resort in selected_resorts:
 
             st.markdown(f"### {day}")
 
-            day_data = all_resort_data[resort][day]
+            resort_data = all_resort_data.get(resort, {})
+            day_data = resort_data.get(day, {})
 
             if not day_data:
                 st.info("No forecast data loaded yet.")
@@ -110,5 +110,27 @@ for resort in selected_resorts:
                 st.markdown(f"**Analyst {idx+1}**")
                 st.write(analyst_output)
 
-            st.markdown("### Final Resort Decision")
+            st.markdown("### Final Day Decision")
             st.success(result["final_resort_decision"])
+
+    # Resort summaries
+
+    st.markdown("### Overall Resort Summary")
+
+    today = date_list[0]
+    summary_data = all_resort_data.get(resort, {}).get(today, {})
+
+    if summary_data:
+
+        with st.spinner("Generating overall resort summary..."):
+
+            summary_result = analyze_resort_day(
+                resort=resort,
+                day=today,
+                day_data=summary_data
+            )
+
+        st.write(summary_result["final_resort_decision"])
+
+    else:
+        st.info("No summary available yet.")
