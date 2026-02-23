@@ -13,6 +13,20 @@ services:
       timeout: 5s
       retries: 20
 
+  # Redis stack w/ vector search enabled
+
+  redis:
+    image: redis/redis-stack:latest
+    container_name: redis-stack
+    ports:
+      - "6379:6379"
+      - "8001:8001"  # RedisInsight UI
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+
+  # Airflow init
+
   airflow-init:
     image: apache/airflow:2.8.1
     depends_on:
@@ -34,6 +48,8 @@ services:
       "
     restart: "no"
 
+  # Airflow webserver
+
   airflow-webserver:
     image: apache/airflow:2.8.1
     depends_on:
@@ -43,7 +59,7 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
-      AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3vOu_zJQp5csdwiIbWEY"
+      AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3VouvzJQp5csdwiIbWEY"
       PYTHONPATH: /opt/airflow/project
     volumes:
       - ./dags:/opt/airflow/dags
@@ -57,6 +73,8 @@ services:
       airflow webserver
       "
 
+  # Airflow scheduler
+
   airflow-scheduler:
     image: apache/airflow:2.8.1
     hostname: airflow-scheduler
@@ -68,7 +86,7 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
       PYTHONPATH: /opt/airflow/project
-      AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3vOu_zJQp5csdwiIbWEY"
+      AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3VouvzJQp5csdwiIbWEY"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./runner.py:/opt/airflow/project/runner.py
@@ -81,3 +99,4 @@ services:
 
 volumes:
   postgres-db-volume:
+  redis-data:
