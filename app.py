@@ -11,12 +11,14 @@ from RAG_architecture import (
     evaluate_resort_day
 )
 
+# Basic configurations
 st.set_page_config(layout="wide")
 
 st.title("Ski Intelligence Dashboard")
 
 available_resorts = list(RESORT_MODELS.keys())
 
+# Resort picker
 selected_resorts = st.multiselect(
     "Select Resorts",
     available_resorts,
