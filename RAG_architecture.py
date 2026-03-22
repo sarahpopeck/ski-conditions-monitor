@@ -14,13 +14,13 @@ QUESTION = "Is this a good day to go skiing?"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 RESORT_MODELS = {
-    "Killington": ["mistral:latest", "llama2"],
-    "Pico": ["llama2", "mistral:latest"],
-    "Sugarloaf": ["mistral:latest", "phi3:latest"],
-    "SundayRiver": ["llama2", "phi3:latest"],
-    "Loon": ["mistral:latest", "llama2"],
-    "Sugarbush": ["phi3:latest", "mistral:latest"],
-    "Stratton": ["llama2", "phi3:latest"],
+    "Killington": ["mistral:latest", "llama2", "phi3:latest"],
+    "Pico": ["llama2", "mistral:latest", "phi3:latest"],
+    "Sugarloaf": ["mistral:latest", "phi3:latest", "llama2"],
+    "SundayRiver": ["llama2", "phi3:latest", "mistral:latest"],
+    "Loon": ["mistral:latest", "llama2", "phi3:latest"],
+    "Sugarbush": ["phi3:latest", "mistral:latest", "llama2"],
+    "Stratton": ["llama2", "phi3:latest", "mistral:latest"],
 }
 
 RESORT_SUMMARY_MODEL = "phi3:latest"
@@ -32,8 +32,6 @@ INDEX_NAME = "ski_index"
 CHUNK_SIZE = 300
 OVERLAP = 50
 
-# postgres connection
-
 POSTGRES_URL = os.getenv(
     "POSTGRES_URL",
     "postgresql://airflow:airflow@localhost:5432/airflow"
@@ -41,8 +39,6 @@ POSTGRES_URL = os.getenv(
 
 engine = create_engine(POSTGRES_URL)
 Session = sessionmaker(bind=engine)
-
-# Redis connection and embedding model
 
 embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 
@@ -52,11 +48,9 @@ r = redis.Redis(
     decode_responses=False
 )
 
-# Transforms the JSON so that it is safe to ingest
-
+# JSON Helper
 def make_json_safe(obj):
     from decimal import Decimal
-
     if isinstance(obj, (datetime, date)):
         return obj.isoformat()
     if isinstance(obj, Decimal):
@@ -67,18 +61,14 @@ def make_json_safe(obj):
         return [make_json_safe(v) for v in obj]
     return obj
 
-
 def safe_json_dump(data):
     safe = make_json_safe(data)
     return json.dumps(safe) if isinstance(safe, (dict, list)) else str(safe)
 
-
-# Create embeddings
-
+# Embeddings
 def get_embedding(text):
     vec = embedding_model.encode(text)
     return np.array(vec).astype(np.float32)
-
 
 def split_text(text):
     words = text.split()
@@ -87,9 +77,7 @@ def split_text(text):
         chunks.append(" ".join(words[i:i + CHUNK_SIZE]))
     return chunks
 
-
-# Create indexes
-
+# Redis Indexing
 def create_index():
     try:
         r.ft(INDEX_NAME).info()
@@ -121,9 +109,7 @@ def create_index():
         definition=IndexDefinition(prefix=["ski:"], index_type=IndexType.HASH)
     )
 
-
-# Ingest daily data
-
+# Ingest Data
 def ingest_day_data(resort, day, day_data):
 
     allowed_keys = [
@@ -136,16 +122,12 @@ def ingest_day_data(resort, day, day_data):
     filtered = {k: day_data[k] for k in allowed_keys if k in day_data}
 
     for source_name, raw_data in filtered.items():
-
         text = safe_json_dump(raw_data)
-
         if not text:
             continue
 
         for chunk in split_text(text):
-
             embedding = get_embedding(chunk)
-
             key = f"ski:{resort}:{day}:{uuid.uuid4()}"
 
             r.hset(
@@ -159,13 +141,10 @@ def ingest_day_data(resort, day, day_data):
                 }
             )
 
-
-# Search embeddings
-
+# Search
 def search_embeddings(resort, day, query, top_k=6):
 
     create_index()
-
     query_vec = get_embedding(query)
 
     results = r.ft(INDEX_NAME).search(
@@ -187,9 +166,7 @@ def search_embeddings(resort, day, query, top_k=6):
 
     return sorted(context, key=lambda x: x["score"], reverse=True)[:top_k]
 
-
-# LLM analysis - we use 2 llms to each make decisions, and a third to summarize
-
+# LLM Analysis
 def generate_analysis(resort, context, model):
 
     context_str = "\n\n".join(
@@ -217,20 +194,57 @@ Return:
 
     return response["message"]["content"]
 
+# Ensemble Voting Helper
+def extract_vote(output):
+    text = output.upper()
+    if "YES" in text:
+        return "YES"
+    elif "NO" in text:
+        return "NO"
+    return "UNKNOWN"
 
+def aggregate_votes(analyst_outputs):
+
+    votes = [extract_vote(o) for o in analyst_outputs]
+
+    yes_count = votes.count("YES")
+    no_count = votes.count("NO")
+
+    if yes_count > no_count:
+        final_vote = "YES"
+    elif no_count > yes_count:
+        final_vote = "NO"
+    else:
+        final_vote = "TIE"
+
+    confidence = max(yes_count, no_count) / len(votes)
+
+    return {
+        "votes": votes,
+        "final_vote": final_vote,
+        "confidence": round(confidence, 2)
+    }
+
+# Summarizer LLM
 def summarize_resort(resort, analyst_outputs):
+
+    vote_info = aggregate_votes(analyst_outputs)
 
     combined = "\n\n".join(
         [f"Analyst {i+1}:\n{out}" for i, out in enumerate(analyst_outputs)]
     )
 
     prompt = f"""
-Two analysts evaluated {resort}.
+Three analysts evaluated {resort}.
+
+Votes: {vote_info['votes']}
+Majority Decision: {vote_info['final_vote']}
+Agreement Level: {vote_info['confidence']}
 
 {combined}
 
 Return:
-1) Final YES or NO
+1) Final YES or NO (must align with majority unless strong justification)
 2) Exactly 3 sentences explanation
 3) Confidence
 """
@@ -242,17 +256,13 @@ Return:
 
     return response["message"]["content"]
 
-
-# Main function to evaluate each resort for each day
-
+# Evaluate Resort
 def evaluate_resort_day(resort, day, day_data):
 
     ingest_day_data(resort, day, day_data)
-
     context = search_embeddings(resort, day, QUESTION)
 
     models = RESORT_MODELS.get(resort, ["mistral:latest"])
-
     analyst_outputs = []
 
     for model in models:
@@ -260,18 +270,18 @@ def evaluate_resort_day(resort, day, day_data):
             generate_analysis(resort, context, model)
         )
 
+    vote_info = aggregate_votes(analyst_outputs)
     final_decision = summarize_resort(resort, analyst_outputs)
 
     return {
         "resort": resort,
         "day": day,
         "analyst_outputs": analyst_outputs,
+        "votes": vote_info,
         "final_resort_decision": final_decision
     }
 
-
-# Global analysis of picking best resort of the chosen ones
-
+# Best Resort Selection
 def pick_best_resort(resort_results):
 
     combined = "\n\n".join(
@@ -280,7 +290,7 @@ def pick_best_resort(resort_results):
     )
 
     prompt = f"""
-Multiple resorts were evaluated.
+Multiple resorts were evaluated using ensemble model predictions.
 
 {combined}
 
@@ -297,7 +307,7 @@ Return:
 
     return response["message"]["content"]
 
-
+# Run Full Analysis
 def run_full_daily_analysis(day, all_resort_data):
 
     results = []
@@ -312,9 +322,7 @@ def run_full_daily_analysis(day, all_resort_data):
         "best_resort_decision": best
     }
 
-
-#  Grab the necessary data
-
+# Fetch Data
 def fetch_resort_full_snapshot(resort, start_ts, end_ts):
 
     session = Session()
@@ -323,7 +331,6 @@ def fetch_resort_full_snapshot(resort, start_ts, end_ts):
 
     try:
         table = f"feat_{rk}_conditions_snapshot"
-
         row = session.execute(
             text(f"""
             SELECT *
@@ -332,15 +339,12 @@ def fetch_resort_full_snapshot(resort, start_ts, end_ts):
             LIMIT 1
             """)
         ).fetchone()
-
         data["conditions_snapshot"] = dict(row._mapping) if row else {}
-
     except Exception:
         data["conditions_snapshot"] = {}
 
     try:
         table = f"feat_{rk}_open_trails_by_difficulty"
-
         row = session.execute(
             text(f"""
             SELECT *
@@ -349,9 +353,7 @@ def fetch_resort_full_snapshot(resort, start_ts, end_ts):
             LIMIT 1
             """)
         ).fetchone()
-
         data["trails_by_difficulty"] = dict(row._mapping) if row else {}
-
     except Exception:
         data["trails_by_difficulty"] = {}
 
@@ -366,9 +368,7 @@ def fetch_resort_full_snapshot(resort, start_ts, end_ts):
             """),
             {"resort": resort, "date": start_ts.date()}
         ).fetchone()
-
         data["openmeteo_daily"] = dict(row._mapping) if row else {}
-
     except Exception:
         data["openmeteo_daily"] = {}
 
@@ -384,16 +384,13 @@ def fetch_resort_full_snapshot(resort, start_ts, end_ts):
             """),
             {"resort": resort, "start": start_ts, "end": end_ts}
         ).fetchall()
-
         data["openmeteo_hourly"] = [
             dict(r._mapping) for r in rows
         ]
-
     except Exception:
         data["openmeteo_hourly"] = []
 
     session.close()
-
     return data
 
 
