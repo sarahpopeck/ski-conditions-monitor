@@ -8,11 +8,16 @@ from datetime import datetime, date
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from sentence_transformers import SentenceTransformer
+import glob
+from pathlib import Path
 
-# Configuration
+# The question our LLMs will answer
 QUESTION = "Is this a good day to go skiing?"
+
+# Embedding model for turning text chunks into vectors
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
+# Each resort has three analyst LLMs; all use same training corpus
 RESORT_MODELS = {
     "Killington": ["mistral:latest", "llama2", "phi3:latest"],
     "Pico": ["llama2", "mistral:latest", "phi3:latest"],
@@ -23,8 +28,10 @@ RESORT_MODELS = {
     "Stratton": ["llama2", "phi3:latest", "mistral:latest"],
 }
 
+# Model used to summarize analyst outputs into a final recommendation
 RESORT_SUMMARY_MODEL = "phi3:latest"
 
+# Redis connection info
 REDIS_HOST = "localhost"
 REDIS_PORT = 6379
 INDEX_NAME = "ski_index"
@@ -32,6 +39,7 @@ INDEX_NAME = "ski_index"
 CHUNK_SIZE = 300
 OVERLAP = 50
 
+# Postgres database
 POSTGRES_URL = os.getenv(
     "POSTGRES_URL",
     "postgresql://airflow:airflow@localhost:5432/airflow"
@@ -40,16 +48,15 @@ POSTGRES_URL = os.getenv(
 engine = create_engine(POSTGRES_URL)
 Session = sessionmaker(bind=engine)
 
+# Connect to Redis
+r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, decode_responses=False)
+
+# Load embedding model
 embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 
-r = redis.Redis(
-    host=REDIS_HOST,
-    port=REDIS_PORT,
-    decode_responses=False
-)
 
-# JSON Helper
 def make_json_safe(obj):
+    # Ensures all data is JSON-serializable before storing
     from decimal import Decimal
     if isinstance(obj, (datetime, date)):
         return obj.isoformat()
@@ -61,24 +68,30 @@ def make_json_safe(obj):
         return [make_json_safe(v) for v in obj]
     return obj
 
+
 def safe_json_dump(data):
+    # Safely dump data into JSON string
     safe = make_json_safe(data)
     return json.dumps(safe) if isinstance(safe, (dict, list)) else str(safe)
 
-# Embeddings
+
 def get_embedding(text):
+    # Convert a chunk of text into a vector embedding
     vec = embedding_model.encode(text)
     return np.array(vec).astype(np.float32)
 
+
 def split_text(text):
+    # Break long text into overlapping chunks for embeddings
     words = text.split()
     chunks = []
     for i in range(0, len(words), CHUNK_SIZE - OVERLAP):
         chunks.append(" ".join(words[i:i + CHUNK_SIZE]))
     return chunks
 
-# Redis Indexing
+
 def create_index():
+    # Creates Redis vector index if not already present
     try:
         r.ft(INDEX_NAME).info()
         return
@@ -96,11 +109,7 @@ def create_index():
         VectorField(
             "embedding",
             "HNSW",
-            {
-                "TYPE": "FLOAT32",
-                "DIM": 384,
-                "DISTANCE_METRIC": "COSINE"
-            }
+            {"TYPE": "FLOAT32", "DIM": 384, "DISTANCE_METRIC": "COSINE"}
         ),
     )
 
@@ -109,55 +118,49 @@ def create_index():
         definition=IndexDefinition(prefix=["ski:"], index_type=IndexType.HASH)
     )
 
-# Ingest Data
-def ingest_day_data(resort, day, day_data):
 
-    allowed_keys = [
-        "conditions_snapshot",
-        "trails_by_difficulty",
-        "openmeteo_daily",
-        "openmeteo_hourly",
-    ]
-
-    filtered = {k: day_data[k] for k in allowed_keys if k in day_data}
-
-    for source_name, raw_data in filtered.items():
-        text = safe_json_dump(raw_data)
-        if not text:
+def ingest_corpus(folder_path="Ski resort conditions"):
+    # Read all PDFs and TXTs, split into chunks, embed, and store in Redis
+    create_index()
+    files = glob.glob(f"{folder_path}/*")
+    for file in files:
+        text = ""
+        if file.lower().endswith(".txt"):
+            with open(file, "r", encoding="utf-8") as f:
+                text = f.read()
+        elif file.lower().endswith(".pdf"):
+            import fitz
+            doc = fitz.open(file)
+            text = "\n".join([page.get_text() for page in doc])
+        else:
             continue
-
         for chunk in split_text(text):
             embedding = get_embedding(chunk)
-            key = f"ski:{resort}:{day}:{uuid.uuid4()}"
-
+            key = f"ski:corpus:{uuid.uuid4()}"
             r.hset(
                 key,
                 mapping={
-                    "resort": resort,
-                    "day": day,
-                    "source": source_name,
+                    "resort": "general",
+                    "day": "corpus",
+                    "source": Path(file).name,
                     "chunk": chunk,
                     "embedding": embedding.tobytes()
                 }
             )
 
-# Search
-def search_embeddings(resort, day, query, top_k=6):
 
+def search_chunks(query, top_k=6):
+    # Retrieve the most relevant chunks from Redis based on query embedding
     create_index()
     query_vec = get_embedding(query)
-
+    q = f"*=>[KNN {top_k} @embedding $vec AS score]"
     results = r.ft(INDEX_NAME).search(
-        f"@resort:{{{resort}}} @day:{{{day}}}",
+        q,
         query_params={"vec": query_vec.tobytes()}
     )
 
-    if not results or not hasattr(results, "docs"):
-        return []
-
     context = []
-
-    for doc in results.docs:
+    for doc in getattr(results, "docs", []):
         context.append({
             "source": getattr(doc, "source", ""),
             "chunk": getattr(doc, "chunk", ""),
@@ -166,13 +169,11 @@ def search_embeddings(resort, day, query, top_k=6):
 
     return sorted(context, key=lambda x: x["score"], reverse=True)[:top_k]
 
-# LLM Analysis
-def generate_analysis(resort, context, model):
 
-    context_str = "\n\n".join(
-        [f"[Source: {c['source']}]\n{c['chunk']}" for c in context]
-    )
-
+def generate_analysis(resort, weather_summary, model):
+    # Ask a single analyst LLM to give a recommendation based on context
+    context = search_chunks(weather_summary)
+    context_str = "\n\n".join([f"[Source: {c['source']}]\n{c['chunk']}" for c in context])
     prompt = f"""
 You are a ski conditions analyst for {resort}.
 
@@ -186,111 +187,91 @@ Return:
 1) YES or NO
 2) 3-5 sentence explanation
 """
-
-    response = ollama.chat(
-        model=model,
-        messages=[{"role": "user", "content": prompt}]
-    )
-
+    response = ollama.chat(model=model, messages=[{"role": "user", "content": prompt}])
     return response["message"]["content"]
 
-# Ensemble Voting Helper
-def extract_vote(output):
-    text = output.upper()
-    if "YES" in text:
-        return "YES"
-    elif "NO" in text:
-        return "NO"
-    return "UNKNOWN"
 
-def aggregate_votes(analyst_outputs):
-
-    votes = [extract_vote(o) for o in analyst_outputs]
-
-    yes_count = votes.count("YES")
-    no_count = votes.count("NO")
-
-    if yes_count > no_count:
-        final_vote = "YES"
-    elif no_count > yes_count:
-        final_vote = "NO"
-    else:
-        final_vote = "TIE"
-
-    confidence = max(yes_count, no_count) / len(votes)
-
-    return {
-        "votes": votes,
-        "final_vote": final_vote,
-        "confidence": round(confidence, 2)
-    }
-
-# Summarizer LLM
 def summarize_resort(resort, analyst_outputs):
-
-    vote_info = aggregate_votes(analyst_outputs)
-
-    combined = "\n\n".join(
-        [f"Analyst {i+1}:\n{out}" for i, out in enumerate(analyst_outputs)]
-    )
-
+    # Summarizes all analyst outputs into one final recommendation
+    combined = "\n\n".join([f"Analyst {i+1}:\n{out}" for i, out in enumerate(analyst_outputs)])
     prompt = f"""
-Three analysts evaluated {resort}.
-
-Votes: {vote_info['votes']}
-Majority Decision: {vote_info['final_vote']}
-Agreement Level: {vote_info['confidence']}
+Two analysts evaluated {resort}.
 
 {combined}
 
 Return:
-1) Final YES or NO (must align with majority unless strong justification)
+1) Final YES or NO
 2) Exactly 3 sentences explanation
 3) Confidence
 """
-
-    response = ollama.chat(
-        model=RESORT_SUMMARY_MODEL,
-        messages=[{"role": "user", "content": prompt}]
-    )
-
+    response = ollama.chat(model=RESORT_SUMMARY_MODEL, messages=[{"role": "user", "content": prompt}])
     return response["message"]["content"]
 
-# Evaluate Resort
-def evaluate_resort_day(resort, day, day_data):
 
-    ingest_day_data(resort, day, day_data)
-    context = search_embeddings(resort, day, QUESTION)
+def fetch_resort_full_snapshot(resort, start_ts, end_ts):
+    # Grab the latest conditions and forecast data from Postgres
+    session = Session()
+    rk = resort.lower()
+    data = {}
+    try:
+        table = f"feat_{rk}_conditions_snapshot"
+        row = session.execute(text(f"SELECT * FROM {table} ORDER BY ingested_at DESC LIMIT 1")).fetchone()
+        data["conditions_snapshot"] = dict(row._mapping) if row else {}
+    except Exception:
+        data["conditions_snapshot"] = {}
+    try:
+        table = f"feat_{rk}_open_trails_by_difficulty"
+        row = session.execute(text(f"SELECT * FROM {table} ORDER BY ingested_at DESC LIMIT 1")).fetchone()
+        data["trails_by_difficulty"] = dict(row._mapping) if row else {}
+    except Exception:
+        data["trails_by_difficulty"] = {}
+    try:
+        row = session.execute(
+            text("SELECT * FROM openmeteo_daily WHERE resort = :resort AND date_utc = :date LIMIT 1"),
+            {"resort": resort, "date": start_ts.date()}
+        ).fetchone()
+        data["openmeteo_daily"] = dict(row._mapping) if row else {}
+    except Exception:
+        data["openmeteo_daily"] = {}
+    try:
+        rows = session.execute(
+            text("SELECT * FROM openmeteo_hourly WHERE resort = :resort AND time_utc >= :start AND time_utc < :end ORDER BY time_utc ASC"),
+            {"resort": resort, "start": start_ts, "end": end_ts}
+        ).fetchall()
+        data["openmeteo_hourly"] = [dict(r._mapping) for r in rows]
+    except Exception:
+        data["openmeteo_hourly"] = []
+    session.close()
+    return data
 
-    models = RESORT_MODELS.get(resort, ["mistral:latest"])
-    analyst_outputs = []
 
-    for model in models:
-        analyst_outputs.append(
-            generate_analysis(resort, context, model)
-        )
-
-    vote_info = aggregate_votes(analyst_outputs)
-    final_decision = summarize_resort(resort, analyst_outputs)
-
+def evaluate_resort_day(resort, day_data):
+    # Run all three analysts and then summarize for a given day
+    weather_summary = safe_json_dump(day_data)
+    models = RESORT_MODELS.get(resort, ["mistral:latest", "llama2", "phi3:latest"])
+    analyst_outputs = [generate_analysis(resort, weather_summary, model) for model in models]
+    final_resort_decision = summarize_resort(resort, analyst_outputs)
     return {
         "resort": resort,
-        "day": day,
         "analyst_outputs": analyst_outputs,
-        "votes": vote_info,
-        "final_resort_decision": final_decision
+        "final_resort_decision": final_resort_decision
     }
 
-# Best Resort Selection
+
+def run_full_daily_analysis(day, all_resort_data):
+    # Run the analysis for each resort and then pick the best overall
+    results = []
+    for resort, data in all_resort_data.items():
+        results.append(evaluate_resort_day(resort, data[day]))
+    best = pick_best_resort(results)
+    return {"per_resort": results, "best_resort_decision": best}
+
+
 def pick_best_resort(resort_results):
-
-    combined = "\n\n".join(
-        [f"{r['resort']}:\n{r['final_resort_decision']}"
-         for r in resort_results]
-    )
-
+    # Compare all resorts and choose the one with the best recommendation
+    combined = "\n\n".join([f"{r['resort']}:\n{r['final_resort_decision']}" for r in resort_results])
     prompt = f"""
-Multiple resorts were evaluated using ensemble model predictions.
+Multiple resorts were evaluated.
 
 {combined}
 
@@ -299,105 +280,5 @@ Return:
 2) 3 sentence explanation
 3) Confidence
 """
-
-    response = ollama.chat(
-        model=RESORT_SUMMARY_MODEL,
-        messages=[{"role": "user", "content": prompt}]
-    )
-
+    response = ollama.chat(model=RESORT_SUMMARY_MODEL, messages=[{"role": "user", "content": prompt}])
     return response["message"]["content"]
-
-# Run Full Analysis
-def run_full_daily_analysis(day, all_resort_data):
-
-    results = []
-
-    for resort, data in all_resort_data.items():
-        results.append(evaluate_resort_day(resort, day, data))
-
-    best = pick_best_resort(results)
-
-    return {
-        "per_resort": results,
-        "best_resort_decision": best
-    }
-
-# Fetch Data
-def fetch_resort_full_snapshot(resort, start_ts, end_ts):
-
-    session = Session()
-    rk = resort.lower()
-    data = {}
-
-    try:
-        table = f"feat_{rk}_conditions_snapshot"
-        row = session.execute(
-            text(f"""
-            SELECT *
-            FROM {table}
-            ORDER BY ingested_at DESC
-            LIMIT 1
-            """)
-        ).fetchone()
-        data["conditions_snapshot"] = dict(row._mapping) if row else {}
-    except Exception:
-        data["conditions_snapshot"] = {}
-
-    try:
-        table = f"feat_{rk}_open_trails_by_difficulty"
-        row = session.execute(
-            text(f"""
-            SELECT *
-            FROM {table}
-            ORDER BY ingested_at DESC
-            LIMIT 1
-            """)
-        ).fetchone()
-        data["trails_by_difficulty"] = dict(row._mapping) if row else {}
-    except Exception:
-        data["trails_by_difficulty"] = {}
-
-    try:
-        row = session.execute(
-            text("""
-            SELECT *
-            FROM openmeteo_daily
-            WHERE resort = :resort
-            AND date_utc = :date
-            LIMIT 1
-            """),
-            {"resort": resort, "date": start_ts.date()}
-        ).fetchone()
-        data["openmeteo_daily"] = dict(row._mapping) if row else {}
-    except Exception:
-        data["openmeteo_daily"] = {}
-
-    try:
-        rows = session.execute(
-            text("""
-            SELECT *
-            FROM openmeteo_hourly
-            WHERE resort = :resort
-            AND time_utc >= :start
-            AND time_utc < :end
-            ORDER BY time_utc ASC
-            """),
-            {"resort": resort, "start": start_ts, "end": end_ts}
-        ).fetchall()
-        data["openmeteo_hourly"] = [
-            dict(r._mapping) for r in rows
-        ]
-    except Exception:
-        data["openmeteo_hourly"] = []
-
-    session.close()
-    return data
-
-
-__all__ = [
-    "RESORT_MODELS",
-    "evaluate_resort_day",
-    "run_full_daily_analysis",
-    "pick_best_resort",
-    "fetch_resort_full_snapshot",
-]
