@@ -1,0 +1,3273 @@
+{
+  "name": "Sunday River",
+  "units": "USC",
+  "updated": "2026-03-17T19:59:51Z",
+  "liftsUpdated": "2026-03-17T19:59:51Z",
+  "trailsUpdated": "2026-03-17T19:44:48Z",
+  "commentsUpdated": "2026-03-17T19:44:48Z",
+  "operations": {
+    "resortStatus": "OPEN",
+    "openTime": "09:00",
+    "closeTime": "16:00",
+    "nightOpenTime": "15:00",
+    "nightCloseTime": null,
+    "uphillStatus": null,
+    "summerLiftStatus": null
+  },
+  "currentConditions": {
+    "resortwide": {
+      "totalTrailArea": {
+        "acres": 884,
+        "hectares": 358
+      },
+      "totalTrailLength": {
+        "miles": 55,
+        "kilometers": 89
+      },
+      "areaOpen": {
+        "acres": 470,
+        "hectares": 190
+      },
+      "lengthOpen": {
+        "miles": 34,
+        "kilometers": 55
+      },
+      "numTrailsTotal": 144,
+      "numTrailsOpen": 87,
+      "numTrailsGroomed": 75,
+      "numTrailsSnowMaking": 0,
+      "numLiftsTotal": 19,
+      "numLiftsOpen": 0,
+      "numLiftsOnHold": 0,
+      "numLiftsClosed": 19,
+      "numParksTotal": 6,
+      "numParksOpen": 0,
+      "numPipesTotal": null,
+      "numPipesOpen": null,
+      "numParkFeaturesOpen": 0,
+      "numSummerTrailsTotal": null,
+      "numSummerTrailsOpen": null,
+      "numSummerLiftsTotal": null,
+      "numSummerLiftsOpen": null
+    },
+    "resortLocations": {
+      "location": [
+        {
+          "name": "SUNDAY RIVER",
+          "elevation": null,
+          "primarySurface": "Machine Groomed",
+          "secondarySurface": "Variable Conditions",
+          "snowOverNight": {
+            "inches": "0",
+            "centimeters": "0"
+          },
+          "snowOverNightLabel": "Snow Overnight",
+          "snowSince5am": null,
+          "snowSince5amLabel": "Snow Since 5am",
+          "snow12Hours": {
+            "inches": "0",
+            "centimeters": "0"
+          },
+          "snow12HoursLabel": "Snow 12 Hrs.",
+          "snow24Hours": {
+            "inches": "0",
+            "centimeters": "0"
+          },
+          "snow24HoursLabel": "Snow 24 Hrs.",
+          "snow48Hours": {
+            "inches": "0",
+            "centimeters": "0"
+          },
+          "snow48HoursLabel": "Snow 48 Hrs.",
+          "snow72Hours": {
+            "inches": "4",
+            "centimeters": "10"
+          },
+          "snow72HoursLabel": "Snow 72 Hrs.",
+          "snow7Days": {
+            "inches": "4",
+            "centimeters": "10"
+          },
+          "snow7DaysLabel": "Snow 7 Days",
+          "snowSeasonTotal": {
+            "inches": "104",
+            "centimeters": "264"
+          },
+          "snowSeasonTotalLabel": "Snow Season Total",
+          "base": {
+            "inches": "20",
+            "centimeters": "51"
+          },
+          "baseLabel": "Base Depth",
+          "baseMin": {
+            "inches": "20",
+            "centimeters": "51"
+          },
+          "baseMinLabel": "Base Depth",
+          "baseMax": {
+            "inches": "20",
+            "centimeters": "51"
+          },
+          "baseMaxLabel": "Base Depth",
+          "tracksetOpen": null,
+          "tracksetOpenLabel": "Trackset Open",
+          "skateGroomed": null,
+          "skateGroomedLabel": "Skate Groomed",
+          "snowshoeGroomed": null,
+          "snowshoeGroomedLabel": "Snowshoe Groomed",
+          "fatTireOpen": null,
+          "fatTireOpenLabel": "Fat Tire Open"
+        }
+      ]
+    },
+    "roads": null
+  },
+  "comments": {
+    "comment": [
+      {
+        "name": "Comment",
+        "title": "",
+        "background": "",
+        "text": "<h5><br> Afternoon Report<br></h5><br><p><br> <strong>Last Updated: 3/17/2026 | 12:48PM</strong><br><p><br> Yeah we might've been right about this not being a top-3 day but it sure was pretty out. The lower mountain was skiing like butter with soft, playful snow to carve through. Upper mountain, eh not so much but we've got some good news. It's going to get cold tonight and that means our grooming team is going to be doing some major work on the hill. It's a tall order, but thankfully our grooming team is the best one out there, so tomorrow's looking mighty fine.<br><p><br> Looking ahead, we've got a <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.sundayriver.com/events/party-in-the-park\">Party in the Park</a> with our Parks Crew and the annual <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.sundayriver.com/events/pond-a-palooza\">Pond Skim</a> at the end of the month. Not to mention the crowd favorite <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.sundayriver.com/events/bust-n-burn\">Bust 'N' Burn</a> on the first weekend of April.<br><p><br> And finally, in case you missed the news, the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.sundayriver.com/season-passes\">New England Pass is back on sale</a> for 2026/27. Get the lowest prices of the year RIGHT NOW. Prices increase on April 3 so you've got time, but why wait?<br><p><br> That's all for today, thanks for coming out and we'll see you tomorrow.<br><p><br> -Team Snow"
+      },
+      {
+        "name": "Comment 2",
+        "title": "",
+        "background": "",
+        "text": " Top o' the mornin' to ya and Happy St. Patrick's Day! Consider this your early morning reminder to wear green. You're welcome.<br><p><br> We've got another classically dynamic New England weather day today. Temps didn't get especially cool last night, but are currently dropping pretty fast. So as you're making your way out the door today, keep in mind that we've already seen today's warmest temperatures when you consider your layering.\u00a0<br><p><br> Report from the grooming team is that temperature drop is leaving behind a thin crust on the groomed surface. Last night's groom was very limited with the unfavorable weather, but there is a groomed green way down on most peaks.\u00a0<br><p><br> Additionally, it's windy. White Heat quad and Aurora will not spin today, and the Chondola is currently on wind hold. Winds look to be around a sustained 20mph with gusts up to 40.<br><p><br> So now that we got through that, there's still tons of skiing left to be had. Today probably won't crack your top-3 all-time days, but a bad day on the hill is still better than a good day in the office.<br><p><br> Looking ahead we've got a <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.sundayriver.com/events/party-in-the-park\">Party in the Park</a> with our Parks Crew and the annual <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.sundayriver.com/events/pond-a-palooza\">Pond Skim</a> at the end of the month. Not to mention the crowd favorite <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.sundayriver.com/events/bust-n-burn\">Bust 'N' Burn</a> on the first weekend of April.<br><p><br> And finally, in case you missed the news, the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.sundayriver.com/season-passes\">New England Pass is back on sale</a> for 2026/27. Sheesh, where does the time go? Get the lowest prices of the year right now. Prices increase on April 3, so you've got some time, but why wait?\u00a0<br><p><br> That's all for us this morning, we'll see you out there.<br><p><br> -Team Snow"
+      },
+      {
+        "name": "Comment 3",
+        "title": "Daily Photo",
+        "background": "",
+        "text": "<a href=\"https://cdn.sanity.io/images/k8yfdmw9/sunday-river/d42b9370a995ce70fadeab37882ad0b6b6ec6745-8256x5504.jpg\">https://cdn.sanity.io/images/k8yfdmw9/sunday-river/d42b9370a995ce70fadeab37882ad0b6b6ec6745-8256x5504.jpg</a>"
+      },
+      {
+        "name": "commentAlert",
+        "title": "",
+        "background": "",
+        "text": ""
+      },
+      {
+        "name": "trailsAlert",
+        "title": "",
+        "background": "",
+        "text": ""
+      },
+      {
+        "name": "liftsAlert",
+        "title": "",
+        "background": "",
+        "text": ""
+      }
+    ]
+  },
+  "facilities": {
+    "areas": {
+      "area": [
+        {
+          "name": "WHITE CAP",
+          "lifts": {
+            "lift": [
+              {
+                "name": "Little White Cap Quad #11",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM ",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 4,
+                "liftIcon": "chairlift-4",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "White Cap Quad #9",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM ",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 4,
+                "liftIcon": "chairlift-4",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "White Heat Quad #10",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-3:45PM  ",
+                "openTime": "09:00",
+                "closeTime": "15:45",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 4,
+                "liftIcon": "chairlift-4",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Bear Paw",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Cutback",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Green Cheese",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Moonstruck",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Roadrunner",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Village Trail",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Walking Required",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Assumption",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Cutoff",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Heat's Off",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Heat's On",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Jibe",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Tempest (Lower)",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Salvation",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Starburst",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Starlight",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Wildfire",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Obsession",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Snowbound",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Starstruck",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Starwood",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Tempest (Upper)",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Upper Chutzpah",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Upper Hard Ball",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower Chutzpah",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower Hard Ball",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Shock Wave",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "White Heat",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": null,
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "LOCKE MOUNTAIN",
+          "lifts": {
+            "lift": [
+              {
+                "name": "Locke Mountain Triple #4",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "9AM-3:45PM",
+                "openTime": "09:00",
+                "closeTime": "03:45",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 3,
+                "liftIcon": "chairlift-3",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "Alera Group Competition Lift #5",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "GACP Only",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "T-Bar",
+                "capacity": 1,
+                "liftIcon": "poma",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Cascades",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Goat Path",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Upper Sunday Punch",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Bim's Whim",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Jim's Whim",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Locke Line",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Monday Mourning",
+                "id": null,
+                "status": "Event",
+                "statusIcon": "event",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Poma Road",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "T2",
+                "id": null,
+                "status": "Event",
+                "statusIcon": "event",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Tightwire",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Upper Cut",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": null,
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "BARKER MOUNTAIN",
+          "lifts": {
+            "lift": [
+              {
+                "name": "Barker 6 #1",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM ",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Detachable Chairlift",
+                "capacity": 6,
+                "liftIcon": "chairlift-6",
+                "featureIcons": [
+                  "bubble",
+                  "heated",
+                  "highspeed"
+                ],
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Three Mile Trail",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Ecstasy",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Jungle Road",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Lazy River",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Lower Upper Cut",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Rocking Chair",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Sluice",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Southpaw",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Sunday Punch",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Tourist Trap",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Last Tango",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Right Stuff",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Agony",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Hollywood",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Top Gun",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": {
+              "park": [
+                {
+                  "name": "Flow State Park",
+                  "id": null,
+                  "status": "Closed",
+                  "statusIcon": "closed",
+                  "comment": "",
+                  "difficulty": null,
+                  "difficultyIcon": "terrain-park",
+                  "groomed": null,
+                  "jibsOpen": null,
+                  "jumpsOpen": null,
+                  "snowFeaturesOpen": null,
+                  "size": null,
+                  "nightStatus": null,
+                  "featureIcons": null
+                }
+              ]
+            },
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "SOUTH RIDGE",
+          "lifts": {
+            "lift": [
+              {
+                "name": "Chondola #7",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM ",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Chondola",
+                "capacity": 8,
+                "liftIcon": "chondola",
+                "featureIcons": [
+                  "highspeed"
+                ],
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "South Ridge Express #2",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Detachable Chairlift",
+                "capacity": 4,
+                "liftIcon": "chairlift-4",
+                "featureIcons": [
+                  "highspeed"
+                ],
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "Lower Sundance Surface Lift #16",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Magic carpet",
+                "capacity": 0,
+                "liftIcon": "magic-carpet",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "Middle Sundance Surface Lift #17",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Magic carpet",
+                "capacity": 0,
+                "liftIcon": "magic-carpet",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "Upper Sundance Surface Lift #18",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Magic carpet",
+                "capacity": 0,
+                "liftIcon": "magic-carpet",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Broadway",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Double Dipper",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Easy Street",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Lower Chondi Line",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Lower Lazy River",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Mixing Bowl",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Northway",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Ridge Express",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Walking Required",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Ridge Run",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Second Thoughts",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Spectator",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Sundance",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Outta Here",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": {
+              "park": [
+                {
+                  "name": "Who-Ville",
+                  "id": null,
+                  "status": "On Hold",
+                  "statusIcon": "on-hold",
+                  "comment": "",
+                  "difficulty": null,
+                  "difficultyIcon": "terrain-park",
+                  "groomed": null,
+                  "jibsOpen": null,
+                  "jumpsOpen": null,
+                  "snowFeaturesOpen": null,
+                  "size": null,
+                  "nightStatus": null,
+                  "featureIcons": null
+                },
+                {
+                  "name": "Wonderland Park",
+                  "id": null,
+                  "status": "Closed",
+                  "statusIcon": "closed",
+                  "comment": "",
+                  "difficulty": null,
+                  "difficultyIcon": "terrain-park",
+                  "groomed": null,
+                  "jibsOpen": null,
+                  "jumpsOpen": null,
+                  "snowFeaturesOpen": null,
+                  "size": null,
+                  "nightStatus": null,
+                  "featureIcons": null
+                }
+              ]
+            },
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "MERRILL HILL",
+          "lifts": {
+            "lift": [
+              {
+                "name": "Merrill Hill Triple #19",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 3,
+                "liftIcon": "chairlift-3",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Brilliant",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Double Refraction",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Spectra",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Prism",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": null,
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "SPRUCE PEAK",
+          "lifts": {
+            "lift": [
+              {
+                "name": "Spruce Peak Triple #8",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-3:45PM ",
+                "openTime": "09:00",
+                "closeTime": "15:45",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 3,
+                "liftIcon": "chairlift-3",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Aludra",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Lights Out",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Sirius",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": " ",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Thataway",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "American Express",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Advanced Terrain",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Exit Left",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower Risky Business",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Expert Only",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Overdraft",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Upper Risky Business",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Expert Only",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Downdraft",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Expert Only",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Gnarnia",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": null,
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "NORTH PEAK",
+          "lifts": {
+            "lift": [
+              {
+                "name": "North Peak Express #6",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "9AM-4PM",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Detachable Chairlift",
+                "capacity": 4,
+                "liftIcon": "chairlift-4",
+                "featureIcons": [
+                  "highspeed"
+                ],
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Backside",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Broadway Connection",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Dream Maker",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Exit Right",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Polaris",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Second Mile",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Ski Back",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "3D",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Advanced Terrain",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Absolutely",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": " ",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Enchanted Forest",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Escapade",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Grand Rapids",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Last Mile",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Thin Cover",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower Downdraft",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Peak Easy",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "T72",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Upper Chondi Line",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Yetiville",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower North Woods",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Northern Exposure",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Upper North Woods",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": {
+              "park": [
+                {
+                  "name": "Lower 3D Park",
+                  "id": null,
+                  "status": "On Hold",
+                  "statusIcon": "on-hold",
+                  "comment": "",
+                  "difficulty": null,
+                  "difficultyIcon": "terrain-park",
+                  "groomed": null,
+                  "jibsOpen": null,
+                  "jumpsOpen": null,
+                  "snowFeaturesOpen": null,
+                  "size": null,
+                  "nightStatus": null,
+                  "featureIcons": null
+                },
+                {
+                  "name": "Lower T72 Park",
+                  "id": null,
+                  "status": "On Hold",
+                  "statusIcon": "on-hold",
+                  "comment": "",
+                  "difficulty": null,
+                  "difficultyIcon": "terrain-park",
+                  "groomed": null,
+                  "jibsOpen": null,
+                  "jumpsOpen": null,
+                  "snowFeaturesOpen": null,
+                  "size": null,
+                  "nightStatus": null,
+                  "featureIcons": null
+                },
+                {
+                  "name": "Upper T72 Park",
+                  "id": null,
+                  "status": "Closed",
+                  "statusIcon": "closed",
+                  "comment": "",
+                  "difficulty": null,
+                  "difficultyIcon": "terrain-park",
+                  "groomed": null,
+                  "jibsOpen": null,
+                  "jumpsOpen": null,
+                  "snowFeaturesOpen": null,
+                  "size": null,
+                  "nightStatus": null,
+                  "featureIcons": null
+                }
+              ]
+            },
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "AURORA PEAK",
+          "lifts": {
+            "lift": [
+              {
+                "name": "Aurora Peak Quad #12",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-3:45PM",
+                "openTime": "09:00",
+                "closeTime": "15:45",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 4,
+                "liftIcon": "chairlift-4",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "Quantum Leap Triple #3",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "9AM-4PM ",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 3,
+                "liftIcon": "chairlift-3",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Borealis",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Sensation",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Northern Lights",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Paradigm",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": " ",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Witch Way",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower Airglow",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Black Hole",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Celestial",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Quantum Leap",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Super Nova",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Upper Airglow",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Experts Only",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower Vortex",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Upper Vortex",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": null,
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "OZ",
+          "lifts": {
+            "lift": [
+              {
+                "name": "OZ Quad #15",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "openTime": "10:00",
+                "closeTime": "14:00",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 4,
+                "liftIcon": "chairlift-4",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Cowardly Lion",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "Uphill Access Open",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Cyclone",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "State Fair",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Emerald City",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Eureka",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Flying Monkey",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lost Princess",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": " ",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Poppy Fields",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Ruby Palace",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Tin Woodsman",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": null,
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "JORDAN BOWL",
+          "lifts": {
+            "lift": [
+              {
+                "name": "Jordan 8 Lift #14",
+                "id": null,
+                "status": "Scheduled",
+                "statusIcon": "scheduled",
+                "comment": "9AM-4PM ",
+                "openTime": "09:00",
+                "closeTime": "16:00",
+                "nightStatus": null,
+                "type": "Detachable Chairlift",
+                "capacity": 8,
+                "liftIcon": "chairlift-8",
+                "featureIcons": [
+                  "bubble",
+                  "heated",
+                  "highspeed"
+                ],
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              },
+              {
+                "name": "Jordan Mountain Double #13",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "9AM-3:45PM ",
+                "openTime": "09:00",
+                "closeTime": "15:45",
+                "nightStatus": null,
+                "type": "Chairlift",
+                "capacity": 2,
+                "liftIcon": "chairlift-2",
+                "featureIcons": null,
+                "skierWaitTime": null,
+                "scenicWaitTime": null
+              }
+            ]
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "Boots Off",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Boots On",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Grand Avenue",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Kansas",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Lollapalooza",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Roundabout",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": "novice",
+                "difficultyIcon": "beginner",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Excalibur",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Firestar",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Rogue Angel",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "intermediate",
+                "difficultyIcon": "intermediate",
+                "groomed": true,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": [
+                  "groomed"
+                ]
+              },
+              {
+                "name": "Blind Ambition",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "advanced",
+                "difficultyIcon": "advanced",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Double Blind",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower Caramba",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Upper Caramba",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Lower Wizard's Gulch",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Upper Wizard's Gulch",
+                "id": null,
+                "status": "Closed",
+                "statusIcon": "closed",
+                "comment": "",
+                "difficulty": "expert",
+                "difficultyIcon": "expert",
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": null,
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        },
+        {
+          "name": "UPHILL ROUTES",
+          "lifts": {
+            "lift": null
+          },
+          "trails": {
+            "trail": [
+              {
+                "name": "North Peak",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": null,
+                "difficultyIcon": null,
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Barker",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": null,
+                "difficultyIcon": null,
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "White Cap",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": null,
+                "difficultyIcon": null,
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              },
+              {
+                "name": "Jordan",
+                "id": null,
+                "status": "Open",
+                "statusIcon": "open",
+                "comment": "",
+                "difficulty": null,
+                "difficultyIcon": null,
+                "groomed": false,
+                "nightStatus": null,
+                "snowMaking": false,
+                "uphill": null,
+                "type": null,
+                "featureIcons": null
+              }
+            ]
+          },
+          "freestyleTerrain": {
+            "parks": null,
+            "pipes": null
+          },
+          "specialTerrain": {
+            "terrain": null
+          },
+          "gates": null,
+          "nonDesignatedTrails": null
+        }
+      ]
+    },
+    "parkingLots": null,
+    "shuttles": null,
+    "lodges": null,
+    "retail": null,
+    "skiChecks": null,
+    "winterActivities": null
+  },
+  "summer": null,
+  "pricing": null,
+  "icons": {
+    "liftTypeIcons": {
+      "chairlift-2": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Type/chairlift-2.svg",
+        "label": "2-Place Chairlift"
+      },
+      "chairlift-3": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Type/chairlift-3.svg",
+        "label": "3-Place Chairlift"
+      },
+      "chairlift-4": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Type/chairlift-4.svg",
+        "label": "4-Place Chairlift"
+      },
+      "chairlift-6": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Type/chairlift-6.svg",
+        "label": "6-Place Chairlift"
+      },
+      "chairlift-8": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Type/chairlift-8.svg",
+        "label": "8-Place Chairlift"
+      },
+      "chondola": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Type/gondola.svg",
+        "label": "Chondola"
+      },
+      "magic-carpet": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Type/magic-carpet.svg",
+        "label": "Magic Carpet"
+      },
+      "poma": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Type/poma.svg",
+        "label": "Platter, T-Bar, or Rope Tow"
+      }
+    },
+    "liftStatusIcons": {
+      "open": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/open.svg",
+        "label": "Open"
+      },
+      "scheduled": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/scheduled.svg",
+        "label": "Scheduled"
+      },
+      "on-hold": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/on-hold.svg",
+        "label": "On Hold"
+      },
+      "closed": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/closed.svg",
+        "label": "Closed"
+      }
+    },
+    "liftFeatureIcons": {
+      "bubble": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Feature/bubble.svg",
+        "label": "Bubble Chair"
+      },
+      "heated": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Feature/heated.svg",
+        "label": "Heated Seats"
+      },
+      "highspeed": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Lift/Feature/highspeed.svg",
+        "label": "High Speed"
+      }
+    },
+    "trailStatusIcons": {
+      "open": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/open.svg",
+        "label": "Open"
+      },
+      "scheduled": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/scheduled.svg",
+        "label": "Scheduled"
+      },
+      "on-hold": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/on-hold.svg",
+        "label": "On Hold"
+      },
+      "event": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/event.svg",
+        "label": "Event"
+      },
+      "closed": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/closed.svg",
+        "label": "Closed"
+      }
+    },
+    "trailDifficultyIcons": {
+      "beginner": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Trail/Difficulty/beginner.svg",
+        "label": "Beginner"
+      },
+      "intermediate": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Trail/Difficulty/intermediate.svg",
+        "label": "Intermediate"
+      },
+      "advanced": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Trail/Difficulty/advanced.svg",
+        "label": "Advanced"
+      },
+      "expert": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Trail/Difficulty/expert.svg",
+        "label": "Expert"
+      }
+    },
+    "trailFeatureIcons": {
+      "groomed": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Trail/Feature/groomed.svg",
+        "label": "Groomed"
+      }
+    },
+    "summerLiftTypeIcons": null,
+    "summerLiftStatusIcons": null,
+    "summerTrailStatusIcons": null,
+    "summerTrailDifficultyIcons": null,
+    "lodgeStatusIcons": null,
+    "terrainParkStatusIcons": {
+      "open": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/open.svg",
+        "label": "Open"
+      },
+      "on-hold": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/on-hold.svg",
+        "label": "On Hold"
+      },
+      "closed": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Common/Status/closed.svg",
+        "label": "Closed"
+      }
+    },
+    "terrainParkFeatureIcons": {},
+    "terrainParkDifficultyIcons": {
+      "terrain-park": {
+        "image": "https://feed-icons-dbgxg7hrccgddubp.a03.azurefd.net/Feed/Default/Trail/Difficulty/orange.svg",
+        "label": "Terrain Park"
+      }
+    },
+    "gateDifficultyIcons": null,
+    "nonDesignatedTrailDifficultyIcons": null,
+    "winterActivityStatusIcons": null,
+    "summerActivityStatusIcons": null
+  }
+}

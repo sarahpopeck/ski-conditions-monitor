@@ -1,0 +1,5295 @@
+{
+  "LastUpdate": "2026-03-15T04:58:22-0600",
+  "Resorts": [
+    {
+      "Name": "Stratton",
+      "LastUpdate": "2026-03-15T06:55:18-0400",
+      "GettingHere": "--",
+      "OperatingStatus": "Open",
+      "SnowReport": {
+        "LastUpdate": "2026-03-15T05:52:11-0400",
+        "BaseConditions": "Machine Groomed Frozen Granular",
+        "Report": "<div><strong>3/15 5:45AM -</strong> Winter sure is making a comeback, with yesterday\u2019s 4 inches of fresh snow and cold temperatures holding strong! Today\u2019s shaping up to be a good one with fresh snow across 66 open trails. The grooming was up and out packing in the powder across 65 trails overnight. For your way up, 12 lifts are scheduled to spin at 8:30AM, with the possibility of delays due to high winds. Early access for First Tracks pass holders is planned for this morning, but please call (802)297-INFO for confirmation. Please note there is no beginner skiing or riding from the summit. Ski ya out there!</div><div><br></div><div><strong>Safety Tip:</strong> Be aware, unmarked hazards exist.&nbsp;</div><div><br></div><div><a href=\"https://blog.stratton.com/2026/03/spring-events-at-stratton-2026/\"><strong>Upcoming Events</strong></a></div><div>March 14-15: <a href=\"https://www.stratton.com/things-to-do/events/24-hours-of-stratton\">24 Hours of Stratton</a></div><div>March 20-22: <a href=\"https://www.stratton.com/things-to-do/events/homesick\">HOMESICK</a></div><div>March 20: <a href=\"https://www.stratton.com/things-to-do/events/night-skiing\">Lunar Laps - Night Skiing</a></div><div>March 21: <a href=\"https://www.stratton.com/things-to-do/events/live-music-2\">Live Music with The Ultimates</a></div><div>March 21: <a href=\"https://www.stratton.com/things-to-do/events/homesick-saturday-party\">IKON Pass and East Street Archives presents G. Love and DJ Logic</a></div><div>March 28: <a href=\"https://www.stratton.com/things-to-do/events/pond-skim\">Annual Pond Skim</a></div><div>April 11-12: <a href=\"https://www.stratton.com/things-to-do/events/gather-outdoors\">GATHER</a></div><div>To see our full list of events and more fun to come this summer, click <a href=\"https://www.stratton.com/things-to-do/events\">HERE</a>. And don't forget, we\u2019re offering <a href=\"https://shop.stratton.com/l/winter-lift-tickets/day-lift-tickets/c/daylifttickets\"><strong>50% off lift tickets</strong></a> every Wednesday and Thursday this season. What are you waiting for? <a href=\"https://shop.stratton.com/l/winter-lift-tickets/day-lift-tickets/c/daylifttickets\">Book now</a>!</div><div><br></div><div>Starting March 1, jump into <a href=\"https://www.stratton.com/plan-your-trip/deals-and-packages/ikon-deals\"><strong>Stratton's Ikon Pass Spring Rewards Challenge.</strong></a> The more you scan, the more you win, and we're giving away tons of prizes all month long. You could score summer concert tickets with a night of lodging, a 26/27 Ikon Pass, and even more prizes! Scan your Ikon Pass at Stratton March 1-31 and start stacking the perks. Click <a href=\"https://www.stratton.com/plan-your-trip/deals-and-packages/ikon-deals\">here</a> to learn more about the Ikon Pass Holder Spring Rewards Challenge.</div><div><br></div><div>Reliable cars are the name of the game; that is why we trust Oliver Subaru and Ford. Made for all seasons and all families, check out <a href=\"https://www.oliverfordofbennington.com/\">Oliver Ford</a> and <a href=\"https://www.oliversubaruofrutland.com/\">Oliver Subaru</a> for year-round reliability!</div><div><br></div><div>Stay and relish the Green Mountains! <a href=\"https://www.stratton.com/the-mountain/vermont-real-estate\">Stratton Real Estate</a> is here to help with all your real estate needs. Make your sweet escape a reality.</div>",
+        "AdditionalText": "--",
+        "News": "--",
+        "Alert": "--",
+        "StormRadar": "--",
+        "StormRadarButtonText": "--",
+        "SafetyReport": "--",
+        "SafetyReportFrench": "--",
+        "LiftNotification": "--",
+        "LastUpdatedLift": {
+          "Snow Bowl Express": "open"
+        },
+        "OpenTerrainAcres": "362",
+        "TotalTerrainAcres": "670",
+        "StormTotalIn": "4",
+        "StormTotalCM": "10",
+        "AnnualAverageSnowfallIn": "150",
+        "AnnualAverageSnowfallCm": "381",
+        "SnowBaseRangeIn": "26",
+        "SnowBaseRangeCM": "66",
+        "PreferredBaseReporting": "summit",
+        "SeasonTotalIn": "153",
+        "SeasonTotalCm": "389",
+        "SecondarySeasonTotalIn": "153",
+        "SecondarySeasonTotalCm": "389",
+        "OpenTerrainHectares": "147",
+        "TotalTerrainHectares": "271",
+        "TotalOpenTrails": 66,
+        "TotalTrails": 99,
+        "TotalTrailsMakingSnow": 0,
+        "GroomedTrails": 65,
+        "TotalOpenLifts": 12,
+        "TotalLifts": 14,
+        "TotalOpenActivities": 7,
+        "TotalActivities": 8,
+        "TotalOpenParks": 4,
+        "TotalParks": 4,
+        "OpenNightParks": 0,
+        "TotalNightParks": 0,
+        "TotalParkFeatures": 12,
+        "OpenNightTrails": 0,
+        "TotalNightTrails": 0,
+        "TotalOpenBeginnerTrails": 23,
+        "TotalBeginnerTrails": 37,
+        "TotalOpenIntermediateTrails": 24,
+        "TotalIntermediateTrails": 31,
+        "TotalOpenAdvancedTrails": 11,
+        "TotalAdvancedTrails": 19,
+        "TotalOpenExpertTrails": 4,
+        "TotalExpertTrails": 8,
+        "TotalOpenParkTrails": 4,
+        "TotalParkTrails": 4,
+        "BaseArea": {
+          "Name": "Base",
+          "SinceLiftsClosedIn": "0",
+          "BaseIn": "26",
+          "BaseCm": "66",
+          "Last24HoursIn": "2",
+          "Last48HoursIn": "4",
+          "Last72HoursIn": "4",
+          "Last7DaysIn": "4",
+          "SinceLiftsClosedCm": "0",
+          "Last24HoursCm": "5",
+          "Last48HoursCm": "10",
+          "Last72HoursCm": "10",
+          "Last7DaysCm": "10"
+        },
+        "MidMountainArea": {
+          "Name": "Mid Mountain",
+          "SinceLiftsClosedIn": "0",
+          "BaseIn": "26",
+          "BaseCm": "66",
+          "Last24HoursIn": "2",
+          "Last48HoursIn": "4",
+          "Last72HoursIn": "4",
+          "Last7DaysIn": "4",
+          "SinceLiftsClosedCm": "0",
+          "Last24HoursCm": "5",
+          "Last48HoursCm": "10",
+          "Last72HoursCm": "10",
+          "Last7DaysCm": "10"
+        },
+        "SummitArea": {
+          "Name": "Summit",
+          "SinceLiftsClosedIn": "0",
+          "BaseIn": "26",
+          "BaseCm": "66",
+          "Last24HoursIn": "2",
+          "Last48HoursIn": "4",
+          "Last72HoursIn": "4",
+          "Last7DaysIn": "4",
+          "SinceLiftsClosedCm": "0",
+          "Last24HoursCm": "5",
+          "Last48HoursCm": "10",
+          "Last72HoursCm": "10",
+          "Last7DaysCm": "10"
+        },
+        "AllMountain": {
+          "Last24HoursIn": "2",
+          "Last48HoursIn": "4",
+          "Last72HoursIn": "4",
+          "Last7DaysIn": "4",
+          "Last24HoursCm": "5",
+          "Last48HoursCm": "10",
+          "Last72HoursCm": "10",
+          "Last7DaysCm": "10",
+          "SinceLiftsClosedIn": "0",
+          "SinceLiftsClosedCm": "0"
+        },
+        "GroomingActive": "true",
+        "SnowMakingActive": "false",
+        "ApiMetrics": [
+          {
+            "Name": "Base depth",
+            "Imperial": "26.0",
+            "Metric": "66.04",
+            "Type": "Depth",
+            "Location": "summit",
+            "Label": "Base",
+            "LabelFrench": "--",
+            "LastUpdate": "2022-09-13T18:01:47-0400"
+          },
+          {
+            "Name": "Season total",
+            "Imperial": "153.0",
+            "Metric": "388.62",
+            "Type": "Depth",
+            "Location": "summit",
+            "Label": "Season",
+            "LabelFrench": "--",
+            "LastUpdate": "2022-09-13T18:01:47-0400"
+          }
+        ],
+        "TotalHalfpipes": 0,
+        "OpenHalfpipes": 0
+      },
+      "MountainAreas": [
+        {
+          "Id": 448,
+          "Name": "Glades",
+          "LastUpdate": "2026-03-11T18:52:52-0400",
+          "OpenTrailsCount": 0,
+          "TotalTrailsCount": 0,
+          "Trails": [
+            {
+              "Id": 5103,
+              "Name": "Buck Shot",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:17-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5089,
+              "Name": "Cabin Fever",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:20-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "Not Patroled",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5090,
+              "Name": "Dancing Bear",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:22-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5091,
+              "Name": "Daniel's Web",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:25-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5092,
+              "Name": "Diamond in the Rough",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:27-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5105,
+              "Name": "Eclipse",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:29-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5094,
+              "Name": "Emerald Forest",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:31-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5095,
+              "Name": "Free Fall Gully",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:34-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5096,
+              "Name": "Kidderbrook Ravine",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:36-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5097,
+              "Name": "Moonbeam",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:38-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5093,
+              "Name": "Moondance",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:40-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5098,
+              "Name": "Shred Wood Forest",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:42-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5102,
+              "Name": "Squirrel's Nest",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:43-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5099,
+              "Name": "Test Pilot",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:46-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5100,
+              "Name": "Vertigo",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:48-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5104,
+              "Name": "West Pilot",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-10T13:37:02-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5101,
+              "Name": "Why Not",
+              "MountainAreaName": "Glades",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:52:52-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "Yes",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            }
+          ],
+          "Lifts": [],
+          "Activities": []
+        },
+        {
+          "Id": 154,
+          "Name": "Learning Areas",
+          "LastUpdate": "2026-03-14T20:25:42-0400",
+          "OpenTrailsCount": 2,
+          "TotalTrailsCount": 3,
+          "Trails": [
+            {
+              "Id": 254,
+              "Name": "Downtowner",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:53:07-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 255,
+              "Name": "Stage 1",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-13T20:59:30-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5521,
+              "Name": "Tyrolienne",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 256,
+              "Name": "Village Walk",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            }
+          ],
+          "Lifts": [
+            {
+              "Id": 39,
+              "Name": "Cub Carpet",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-06T12:37:35-0500",
+              "LiftType": "Magic Carpet",
+              "LiftIcon": "magic_carpet",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-magic-carpet-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "--"
+            },
+            {
+              "Id": 40,
+              "Name": "Villager",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-14T20:25:42-0400",
+              "LiftType": "Double",
+              "LiftIcon": "double",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-double-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "--"
+            },
+            {
+              "Id": 41,
+              "Name": "Tamarack",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-06T12:37:35-0500",
+              "LiftType": "Triple Chair",
+              "LiftIcon": "triple_chair",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-triple-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "9"
+            },
+            {
+              "Id": 917,
+              "Name": "Theodore Carpet",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-10T09:12:56-0400",
+              "LiftType": "Magic Carpet",
+              "LiftIcon": "magic_carpet",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-magic-carpet-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "--"
+            },
+            {
+              "Id": 918,
+              "Name": "Tyro Tube",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-13T21:40:27-0400",
+              "LiftType": "Magic Carpet",
+              "LiftIcon": "magic_carpet",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-magic-carpet-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "--"
+            },
+            {
+              "Id": 919,
+              "Name": "Oso Carpet",
+              "MountainAreaName": "Learning Areas",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-12T20:52:23-0400",
+              "LiftType": "Magic Carpet",
+              "LiftIcon": "magic_carpet",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-magic-carpet-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "--"
+            }
+          ],
+          "Activities": []
+        },
+        {
+          "Id": 152,
+          "Name": "Lower Mountain",
+          "LastUpdate": "2026-03-15T05:51:00-0400",
+          "OpenTrailsCount": 26,
+          "TotalTrailsCount": 28,
+          "Trails": [
+            {
+              "Id": 190,
+              "Name": "Beeline",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-11T18:53:44-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 191,
+              "Name": "Betwixt",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-09T13:53:14-0400",
+              "Difficulty": "Terrain Park",
+              "TrailIcon": "Park",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-terrain-park-solid",
+                "PrimaryColor": "#F68C42"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "Yes",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 192,
+              "Name": "Cabot's Run",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T09:44:21-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 193,
+              "Name": "Craig's Run",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-11T18:53:28-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 194,
+              "Name": "Daniel Webster",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 196,
+              "Name": "Duck Soup",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-15T05:50:59-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 950,
+              "Name": "East Byrnes Side",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-14T09:06:20-0400",
+              "Difficulty": "Terrain Park",
+              "TrailIcon": "Park",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-terrain-park-solid",
+                "PrimaryColor": "#F68C42"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "Yes",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 6
+            },
+            {
+              "Id": 198,
+              "Name": "Ethan's Alley",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T11:15:06-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 199,
+              "Name": "Flukey's Run",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 200,
+              "Name": "Grizzly Access",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 201,
+              "Name": "Hemlock",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-11T18:54:28-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 202,
+              "Name": "Lad's Legacy",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-15T05:47:02-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 207,
+              "Name": "Lower Standard",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 208,
+              "Name": "Lower Tamarack",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 210,
+              "Name": "Mark's Run",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 211,
+              "Name": "Old Log Road",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 212,
+              "Name": "Old Smoothie",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 213,
+              "Name": "Overpass",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 214,
+              "Name": "Runaway",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 215,
+              "Name": "Snow Bowl Alley",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 216,
+              "Name": "Spillway",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-15T05:51:00-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 217,
+              "Name": "Suntanner",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 218,
+              "Name": "Tink's Link",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 949,
+              "Name": "Tyrolienne Park",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-13T21:36:49-0400",
+              "Difficulty": "Terrain Park",
+              "TrailIcon": "Park",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-terrain-park-solid",
+                "PrimaryColor": "#F68C42"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "Yes",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 6
+            },
+            {
+              "Id": 220,
+              "Name": "Underpass",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 221,
+              "Name": "White Birch",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-11T18:54:02-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 223,
+              "Name": "Yodeler",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 224,
+              "Name": "Yodeler Express",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            }
+          ],
+          "Lifts": [
+            {
+              "Id": 35,
+              "Name": "American Express",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-14T16:06:09-0400",
+              "LiftType": "6 Chair",
+              "LiftIcon": "six_chair",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-six-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "5"
+            },
+            {
+              "Id": 34,
+              "Name": "South American",
+              "MountainAreaName": "Lower Mountain",
+              "StatusId": 1,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-14T20:25:47-0400",
+              "LiftType": "Quad Chair",
+              "LiftIcon": "quad_chair",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-quad-light"
+              },
+              "StatusIcon": "closed",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "9"
+            }
+          ],
+          "Activities": [
+            {
+              "Id": 471,
+              "Name": "CLIMB Indoor Rock Gym",
+              "Status": "Closed",
+              "StatusEnglish": "open",
+              "StatusIcon": "closed",
+              "LinkUrl": "https://www.stratton.com/things-to-do/activities/climb",
+              "UpdateDate": "2026-03-11T19:16:18-0400",
+              "Hours": {
+                "Sunday": {
+                  "Open": "12:00 PM",
+                  "Close": "6:00 PM"
+                },
+                "Monday": {
+                  "Open": "12:00 PM",
+                  "Close": "6:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Wednesday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Thursday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Friday": {
+                  "Open": "12:00 PM",
+                  "Close": "8:00 PM"
+                },
+                "Saturday": {
+                  "Open": "10:00 AM",
+                  "Close": "6:00 PM"
+                }
+              },
+              "ActivityIcon": "Climbing ",
+              "ActivityIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-climbing-light"
+              }
+            },
+            {
+              "Id": 194,
+              "Name": "Ice Skating",
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "StatusIcon": "closed",
+              "LinkUrl": "https://www.stratton.com/things-to-do/activities/ice-skating",
+              "UpdateDate": "2026-03-01T12:35:41-0500",
+              "Hours": {
+                "Sunday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Monday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Tuesday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Wednesday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Thursday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Friday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Saturday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                }
+              },
+              "ActivityIcon": "person-skating",
+              "ActivityIconFA": {
+                "Style": "fa-light",
+                "Name": "fa-person-skating"
+              }
+            },
+            {
+              "Id": 11,
+              "Name": "Snowmobile Tours",
+              "Status": "Closed",
+              "StatusEnglish": "open",
+              "StatusIcon": "closed",
+              "LinkUrl": "https://www.stratton.com/things-to-do/activities/snowmobile-tours",
+              "UpdateDate": "2026-03-07T11:21:45-0500",
+              "Hours": {
+                "Sunday": {
+                  "Open": "5:00 PM",
+                  "Close": "9:00 PM"
+                },
+                "Monday": {
+                  "Open": "5:00 PM",
+                  "Close": "9:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "5:00 PM",
+                  "Close": "9:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "5:00 PM",
+                  "Close": "9:00 PM"
+                },
+                "Thursday": {
+                  "Open": "5:00 PM",
+                  "Close": "9:00 PM"
+                },
+                "Friday": {
+                  "Open": "5:00 PM",
+                  "Close": "9:00 PM"
+                },
+                "Saturday": {
+                  "Open": "5:00 PM",
+                  "Close": "9:00 PM"
+                }
+              },
+              "ActivityIcon": "person-snowmobiling",
+              "ActivityIconFA": {
+                "Style": "fa-light",
+                "Name": "fa-person-snowmobiling"
+              }
+            },
+            {
+              "Id": 472,
+              "Name": "Training and Fitness Center",
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "StatusIcon": "open",
+              "LinkUrl": "https://www.stratton.com/things-to-do/activities/training-and-fitness-center",
+              "UpdateDate": "2025-11-03T08:40:40-0500",
+              "Hours": {
+                "Sunday": {
+                  "Open": "6:00 AM",
+                  "Close": "7:00 PM"
+                },
+                "Monday": {
+                  "Open": "6:00 AM",
+                  "Close": "7:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "6:00 AM",
+                  "Close": "7:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "6:00 AM",
+                  "Close": "7:00 PM"
+                },
+                "Thursday": {
+                  "Open": "6:00 AM",
+                  "Close": "7:00 PM"
+                },
+                "Friday": {
+                  "Open": "6:00 AM",
+                  "Close": "7:00 PM"
+                },
+                "Saturday": {
+                  "Open": "6:00 AM",
+                  "Close": "7:00 PM"
+                }
+              },
+              "ActivityIcon": "person-swimming",
+              "ActivityIconFA": {
+                "Style": "fa-light",
+                "Name": "fa-person-swimming"
+              }
+            },
+            {
+              "Id": 470,
+              "Name": "Uphill Travel",
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "StatusIcon": "open",
+              "LinkUrl": "https://www.stratton.com/the-mountain/safety-and-responsibility/uphill-travel",
+              "UpdateDate": "2025-11-30T08:21:33-0500",
+              "Hours": {
+                "Sunday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Monday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Tuesday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Wednesday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Thursday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Friday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Saturday": {
+                  "Open": "",
+                  "Close": ""
+                }
+              },
+              "ActivityIcon": "Uphill Travel",
+              "ActivityIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-uphill-access-solid"
+              }
+            },
+            {
+              "Id": 663,
+              "Name": "Winter Tennis & Pickleball",
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "StatusIcon": "open",
+              "LinkUrl": "https://www.stratton.com/things-to-do/activities/winter-tennis-pickleball",
+              "UpdateDate": "2025-11-30T08:21:36-0500",
+              "Hours": {
+                "Sunday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Monday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Tuesday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Wednesday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Thursday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Friday": {
+                  "Open": "",
+                  "Close": ""
+                },
+                "Saturday": {
+                  "Open": "",
+                  "Close": ""
+                }
+              },
+              "ActivityIcon": "Racquet ",
+              "ActivityIconFA": {
+                "Style": "fa-light",
+                "Name": "fa-racquet"
+              }
+            }
+          ]
+        },
+        {
+          "Id": 153,
+          "Name": "Sun Bowl",
+          "LastUpdate": "2026-03-15T05:50:34-0400",
+          "OpenTrailsCount": 9,
+          "TotalTrailsCount": 22,
+          "Trails": [
+            {
+              "Id": 225,
+              "Name": "91",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-13T10:14:10-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 226,
+              "Name": "91 Extension",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:55:54-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 228,
+              "Name": "Big Ben",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-14T10:29:43-0400",
+              "Difficulty": "Terrain Park",
+              "TrailIcon": "Park",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-terrain-park-solid",
+                "PrimaryColor": "#F68C42"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "Yes",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 229,
+              "Name": "Buster's Trail",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:55:12-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 230,
+              "Name": "Churchill Downs",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 232,
+              "Name": "Gentle Ben",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-10T13:18:53-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 233,
+              "Name": "Home Run",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-15T05:50:34-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 234,
+              "Name": "Lower Down Easter",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 235,
+              "Name": "Lower Kidderbrook",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 236,
+              "Name": "Lower Middlebrook",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 237,
+              "Name": "Main Line",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-10T12:59:23-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 246,
+              "Name": "Number 6",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-10T21:33:29-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 238,
+              "Name": "Rick's Catch 22",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:55:08-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 239,
+              "Name": "Rising Star",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-10T13:19:09-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 247,
+              "Name": "Rowley's Run",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:55:30-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 241,
+              "Name": "Shortcut Big Ben",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-14T10:29:47-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 242,
+              "Name": "Shortcut Gentle Ben",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-10T13:18:56-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 243,
+              "Name": "Solstice Way",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T18:56:20-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 244,
+              "Name": "Sunbeam",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T11:15:08-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 248,
+              "Name": "Sunriser Supertrail",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-14T20:33:19-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 249,
+              "Name": "Tree Top Way",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-11T18:54:59-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 253,
+              "Name": "Way Home",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            }
+          ],
+          "Lifts": [
+            {
+              "Id": 36,
+              "Name": "Sunrise Express",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-06T12:37:35-0500",
+              "LiftType": "6 Chair",
+              "LiftIcon": "six_chair",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-six-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "5"
+            },
+            {
+              "Id": 37,
+              "Name": "Shooting Star",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-14T20:25:49-0400",
+              "LiftType": "6 Chair",
+              "LiftIcon": "six_chair",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-six-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "4"
+            },
+            {
+              "Id": 38,
+              "Name": "Solstice",
+              "MountainAreaName": "Sun Bowl",
+              "StatusId": 1,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-07T19:35:54-0500",
+              "LiftType": "Quad Chair",
+              "LiftIcon": "quad_chair",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-quad-light"
+              },
+              "StatusIcon": "closed",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "--"
+            }
+          ],
+          "Activities": [
+            {
+              "Id": 13,
+              "Name": "Coca-Cola Tube Park",
+              "Status": "Closed",
+              "StatusEnglish": "open",
+              "StatusIcon": "closed",
+              "LinkUrl": "https://www.stratton.com/things-to-do/activities/snow-tubing",
+              "UpdateDate": "2026-03-11T19:16:21-0400",
+              "Hours": {
+                "Sunday": {
+                  "Open": "12:00 PM",
+                  "Close": "6:00 PM"
+                },
+                "Monday": {
+                  "Open": "12:00 PM",
+                  "Close": "6:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Wednesday": {
+                  "Open": "Closed",
+                  "Close": "Closed"
+                },
+                "Thursday": {
+                  "Open": "12:00 PM",
+                  "Close": "6:00 PM"
+                },
+                "Friday": {
+                  "Open": "12:00 PM",
+                  "Close": "6:00 PM"
+                },
+                "Saturday": {
+                  "Open": "10:00 AM",
+                  "Close": "8:00 PM"
+                }
+              },
+              "ActivityIcon": "person-sledding",
+              "ActivityIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-tubing-light"
+              }
+            },
+            {
+              "Id": 12,
+              "Name": "Nordic Center",
+              "Status": "Closed",
+              "StatusEnglish": "open",
+              "StatusIcon": "closed",
+              "LinkUrl": "https://www.stratton.com/things-to-do/activities/nordic-center",
+              "UpdateDate": "2026-03-14T10:21:53-0400",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "ActivityIcon": "person-skiing-nordic",
+              "ActivityIconFA": {
+                "Style": "fa-light",
+                "Name": "fa-person-skiing-nordic"
+              }
+            }
+          ]
+        },
+        {
+          "Id": 566,
+          "Name": "Uphill Travel",
+          "LastUpdate": "2026-03-13T10:14:00-0400",
+          "OpenTrailsCount": 0,
+          "TotalTrailsCount": 0,
+          "Trails": [
+            {
+              "Id": 5627,
+              "Name": "Lower Standard - Uphill",
+              "MountainAreaName": "Uphill Travel",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "Yes",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5630,
+              "Name": "Lower & Upper Kidderbrook",
+              "MountainAreaName": "Uphill Travel",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "Yes",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5629,
+              "Name": "Lower Wanderer, West Meadows, Mike's Way",
+              "MountainAreaName": "Uphill Travel",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "Yes",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5628,
+              "Name": "Old Log Rd, West Meadows, Mike's Way",
+              "MountainAreaName": "Uphill Travel",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "Yes",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5631,
+              "Name": "Sun Bowl, Home Run, 91, Main Base Area",
+              "MountainAreaName": "Uphill Travel",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-13T10:14:00-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "Yes",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 5626,
+              "Name": "Yodeler, Underpass",
+              "MountainAreaName": "Uphill Travel",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-06T12:38:34-0500",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "Yes",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            }
+          ],
+          "Lifts": [],
+          "Activities": []
+        },
+        {
+          "Id": 151,
+          "Name": "Upper Mountain",
+          "LastUpdate": "2026-03-15T05:48:00-0400",
+          "OpenTrailsCount": 29,
+          "TotalTrailsCount": 46,
+          "Trails": [
+            {
+              "Id": 160,
+              "Name": "Bear Bottom",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T20:38:19-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 227,
+              "Name": "Bear Down",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T19:02:58-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 161,
+              "Name": "Big D",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T09:44:15-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 162,
+              "Name": "Black Bear",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:23:27-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 1691,
+              "Name": "Dino's Drop",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T08:51:06-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 195,
+              "Name": "Drifter Link",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:22:30-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "SMS Race Training",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 163,
+              "Name": "Frank's Fall Line",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T12:26:34-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "Race Training",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 231,
+              "Name": "Free Fall",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T19:00:27-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 164,
+              "Name": "Get My Drift",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:21:58-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 165,
+              "Name": "Interstate",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T12:26:51-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 166,
+              "Name": "Janeway Junction",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:22:45-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 168,
+              "Name": "Liftline Cut Through",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T10:48:25-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 203,
+              "Name": "Lower Drifter",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:22:11-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 204,
+              "Name": "Lower East Meadow",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T19:01:25-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 167,
+              "Name": "Lower Grizzly Bear",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-13T20:57:18-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 205,
+              "Name": "Lower Liftline",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T19:04:54-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 206,
+              "Name": "Lower Slalom Glade",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:22:52-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 169,
+              "Name": "Lower Spruce",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:23:57-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 170,
+              "Name": "Lower Switchback ",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:23:11-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 209,
+              "Name": "Lower Wanderer",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T09:44:31-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 171,
+              "Name": "Lower West Meadow",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:21:50-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 1690,
+              "Name": "Mike's Cut Through",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-12T11:20:58-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 172,
+              "Name": "Mike's Way",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-12T11:21:01-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 173,
+              "Name": "Old Number 8",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T12:27:01-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 174,
+              "Name": "Polar Bear",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:23:46-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 175,
+              "Name": "Rimeline",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-14T09:47:29-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 240,
+              "Name": "Shooter",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T20:46:25-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 176,
+              "Name": "Stevek",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-14T20:28:02-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 245,
+              "Name": "Sun Bowl Express",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T12:27:09-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 177,
+              "Name": "The Chute",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T12:27:26-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 250,
+              "Name": "Upper Down Easter",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T19:00:20-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 178,
+              "Name": "Upper Drifter",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:22:19-0400",
+              "Difficulty": "Intermediate",
+              "TrailIcon": "BlueSquare",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-blue-solid",
+                "PrimaryColor": "#3772C4"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 179,
+              "Name": "Upper East Meadow",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T19:04:44-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 180,
+              "Name": "Upper Grizzly Bear",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-14T20:18:42-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 251,
+              "Name": "Upper Kidderbrook",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-13T20:57:58-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 181,
+              "Name": "Upper Liftline",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-11T08:50:53-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 252,
+              "Name": "Upper Middlebrook",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-13T20:58:10-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 182,
+              "Name": "Upper Slalom Glade",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-15T05:48:00-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 183,
+              "Name": "Upper Spruce",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T20:36:59-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 184,
+              "Name": "Upper Standard",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T20:37:46-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "Race Training",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 185,
+              "Name": "Upper Switchback",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T20:37:39-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 186,
+              "Name": "Upper Tamarack",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-13T20:56:58-0400",
+              "Difficulty": "Expert",
+              "TrailIcon": "BlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-black-solid"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 187,
+              "Name": "Upper Wanderer",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-12T11:20:02-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 188,
+              "Name": "Upper West Meadow",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Open",
+              "StatusEnglish": "open",
+              "UpdateDate": "2026-03-12T11:21:42-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "open",
+              "SnowMaking": "No",
+              "Grooming": "Yes",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 189,
+              "Name": "Work Road",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-10T11:46:47-0400",
+              "Difficulty": "Easy",
+              "TrailIcon": "GreenCircle",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-green-solid",
+                "PrimaryColor": "#3AAA36"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "No",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            },
+            {
+              "Id": 222,
+              "Name": "World Cup",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 6,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "UpdateDate": "2026-03-14T20:28:11-0400",
+              "Difficulty": "Extreme Terrain",
+              "TrailIcon": "DoubleBlackDiamond",
+              "TrailIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-ski-double-black-solid"
+              },
+              "StatusIcon": "closed",
+              "SnowMaking": "No",
+              "Grooming": "No",
+              "NightSkiing": "No",
+              "Moguls": "Yes",
+              "Glades": "No",
+              "Touring": "No",
+              "Nordic": "No",
+              "TerrainParkOnRun": "No",
+              "RunOfTheDay": "No",
+              "TrailSummary": "--",
+              "TerrainParkFeatures": 0
+            }
+          ],
+          "Lifts": [
+            {
+              "Id": 32,
+              "Name": "URSA Express",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-14T20:25:52-0400",
+              "LiftType": "6 Chair",
+              "LiftIcon": "six_chair",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-six-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "7"
+            },
+            {
+              "Id": 31,
+              "Name": "Gondola",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-14T20:25:54-0400",
+              "LiftType": "Gondola",
+              "LiftIcon": "gondola",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-gondola-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "14"
+            },
+            {
+              "Id": 33,
+              "Name": "Snow Bowl Express",
+              "MountainAreaName": "Upper Mountain",
+              "StatusId": 0,
+              "Status": "Closed",
+              "StatusEnglish": "closed",
+              "FirstTracks": "No",
+              "UpdateDate": "2026-03-14T20:25:55-0400",
+              "LiftType": "High-Speed Quad",
+              "LiftIcon": "high_speed_quad",
+              "LiftIconFA": {
+                "Style": "fa-kit",
+                "Name": "fa-lift-quad-hi-speed-light"
+              },
+              "StatusIcon": "open",
+              "Hours": {
+                "Sunday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                },
+                "Monday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Tuesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Wednesday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Thursday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Friday": {
+                  "Open": "9:00 AM",
+                  "Close": "4:00 PM"
+                },
+                "Saturday": {
+                  "Open": "8:30 AM",
+                  "Close": "4:00 PM"
+                }
+              },
+              "NightHours": "--",
+              "WaitTime": "--",
+              "WaitTimeString": "--",
+              "WaitTimeStatus": "--",
+              "RideTime": "6"
+            }
+          ],
+          "Activities": []
+        }
+      ],
+      "Roads": [],
+      "CurrentConditions": {
+        "Base": {
+          "Name": "Base",
+          "FeedSavedTime": "2026-03-15T04:55:18-0600",
+          "PressureIN": "30.39",
+          "PressureMB": "1029.0",
+          "TemperatureF": "21",
+          "TemperatureC": "-6",
+          "Humidity": 80,
+          "DewPointF": "16",
+          "DewPointC": "-9",
+          "WindDirection": "SW",
+          "WindStrengthMph": 0,
+          "WindStrengthKph": 0,
+          "WindGustsMph": 0,
+          "WindGustsKph": 0,
+          "WindChillF": "21",
+          "WindChillC": "-6",
+          "Skies": "Mostly Cloudy",
+          "TemperatureHighF": "29",
+          "TemperatureHighC": "-2",
+          "TemperatureLowF": "28",
+          "TemperatureLowC": "-2",
+          "UvIndex": "--",
+          "Conditions": "mostlycloudy",
+          "Icon": "bkn.svg",
+          "IconFA": {
+            "Style": "fa-kit",
+            "Name": "fa-cloudy-light"
+          },
+          "Default": "false",
+          "Lodge": {
+            "Name": "Main Base Lodge",
+            "MoreHoursUrl": "https://www.stratton.com/things-to-do/dining/the-market-in-base-lodge",
+            "Open": "false",
+            "Hours": {
+              "Sunday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Monday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Tuesday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Wednesday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Thursday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Friday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Saturday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              }
+            }
+          },
+          "Landmark": {
+            "Name": "Main Base Lodge",
+            "MoreHoursUrl": "https://www.stratton.com/things-to-do/dining/the-market-in-base-lodge",
+            "Open": "false",
+            "Hours": {
+              "Sunday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Monday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Tuesday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Wednesday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Thursday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Friday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              },
+              "Saturday": {
+                "Open": "7:00 AM",
+                "Close": "5:00 PM"
+              }
+            }
+          }
+        },
+        "MidMountain": {
+          "Name": "Mid Mountain",
+          "FeedSavedTime": "2026-03-15T04:55:18-0600",
+          "PressureIN": "30.39",
+          "PressureMB": "1029.0",
+          "TemperatureF": "21",
+          "TemperatureC": "-6",
+          "Humidity": 80,
+          "DewPointF": "16",
+          "DewPointC": "-9",
+          "WindDirection": "SW",
+          "WindStrengthMph": 0,
+          "WindStrengthKph": 0,
+          "WindGustsMph": 0,
+          "WindGustsKph": 0,
+          "WindChillF": "21",
+          "WindChillC": "-6",
+          "Skies": "Mostly Cloudy",
+          "TemperatureHighF": "29",
+          "TemperatureHighC": "-2",
+          "TemperatureLowF": "28",
+          "TemperatureLowC": "-2",
+          "UvIndex": "--",
+          "Conditions": "mostlycloudy",
+          "Icon": "bkn.svg",
+          "IconFA": {
+            "Style": "fa-kit",
+            "Name": "fa-cloudy-light"
+          },
+          "Default": "false",
+          "Lodge": {
+            "Name": "Mid Mountain Lodge",
+            "MoreHoursUrl": "https://www.stratton.com/things-to-do/dining/mid-mountain-lodge",
+            "Open": "false",
+            "Hours": {
+              "Sunday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Monday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Tuesday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Wednesday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Thursday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Friday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Saturday": {
+                "Open": "",
+                "Close": ""
+              }
+            }
+          },
+          "Landmark": {
+            "Name": "Mid Mountain Lodge",
+            "MoreHoursUrl": "https://www.stratton.com/things-to-do/dining/mid-mountain-lodge",
+            "Open": "false",
+            "Hours": {
+              "Sunday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Monday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Tuesday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Wednesday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Thursday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Friday": {
+                "Open": "",
+                "Close": ""
+              },
+              "Saturday": {
+                "Open": "",
+                "Close": ""
+              }
+            }
+          }
+        },
+        "Summit": {
+          "Name": "Summit",
+          "FeedSavedTime": "2026-03-15T04:55:18-0600",
+          "PressureIN": "--",
+          "PressureMB": "--",
+          "TemperatureF": "13",
+          "TemperatureC": "-11",
+          "Humidity": 95,
+          "DewPointF": "12",
+          "DewPointC": "-11",
+          "WindDirection": "WSW",
+          "WindStrengthMph": 1,
+          "WindStrengthKph": 2,
+          "WindGustsMph": 4,
+          "WindGustsKph": 7,
+          "WindChillF": "13",
+          "WindChillC": "-11",
+          "Skies": "Mostly Cloudy",
+          "TemperatureHighF": "29",
+          "TemperatureHighC": "-2",
+          "TemperatureLowF": "28",
+          "TemperatureLowC": "-2",
+          "UvIndex": "--",
+          "Conditions": "mostlycloudy",
+          "Icon": "bkn.svg",
+          "IconFA": {
+            "Style": "fa-kit",
+            "Name": "fa-cloudy-light"
+          },
+          "Default": "true"
+        }
+      },
+      "Forecast": {
+        "FeedSavedTime": "2026-03-15T04:55:25-0600",
+        "TempHighF": "29",
+        "TempLowF": "28",
+        "TempHighC": "-2",
+        "TempHigh_c": "-2",
+        "TempLowC": "-2",
+        "ForecastedSnowIn": "0",
+        "ForecastedSnowCm": "0",
+        "DayComments": "Mostly cloudy, with a high near 37. Calm wind becoming southeast 5 to 8 mph in the afternoon. ",
+        "NightComments": "A chance of freezing rain before 4am, then rain likely, possibly mixed with freezing rain.  Increasing clouds, with a low around 28. Southeast wind 10 to 13 mph, with gusts as high as 28 mph.  Chance of precipitation is 60%. New ice accumulation of less than a 0.1 of an inch possible. ",
+        "OneDay": {
+          "skies": "Windy. Windy",
+          "icon_fa": {
+            "style": "fa-kit",
+            "name": "fa-windy-and-sunny-light"
+          },
+          "temp_high_f": "29",
+          "temp_low_f": "28",
+          "temp_high_c": "-2",
+          "temp_low_c": "-2",
+          "forecasted_snow_in": "0",
+          "forecasted_snow_cm": "0",
+          "date": "2026-03-15",
+          "conditions": "windy",
+          "icon": "wind.svg",
+          "avewind": {
+            "mph": "11mph",
+            "kph": "18kph",
+            "dir": "SE"
+          },
+          "forecasted_snow_day_in": "0",
+          "forecasted_snow_day_cm": "0",
+          "forecasted_snow_night_in": "0",
+          "forecasted_snow_night_cm": "0"
+        },
+        "TwoDay": {
+          "skies": "Snow and Rain. Scattered Thunderstorms",
+          "icon_fa": {
+            "style": "fa-light",
+            "name": "fa-snowflake"
+          },
+          "temp_high_f": "51",
+          "temp_low_f": "27",
+          "temp_high_c": "10",
+          "temp_low_c": "-3",
+          "forecasted_snow_in": "1",
+          "forecasted_snow_cm": "3",
+          "date": "2026-03-16",
+          "conditions": "rain_snow",
+          "icon": "snow.svg",
+          "avewind": {
+            "mph": "30mph",
+            "kph": "48kph",
+            "dir": "SSE"
+          },
+          "forecasted_snow_day_in": "0",
+          "forecasted_snow_day_cm": "0",
+          "forecasted_snow_night_in": "0-1",
+          "forecasted_snow_night_cm": "0-3"
+        },
+        "ThreeDay": {
+          "skies": "Windy. Windy",
+          "icon_fa": {
+            "style": "fa-kit",
+            "name": "fa-windy-and-sunny-light"
+          },
+          "temp_high_f": "24",
+          "temp_low_f": "9",
+          "temp_high_c": "-4",
+          "temp_low_c": "-13",
+          "forecasted_snow_in": "2",
+          "forecasted_snow_cm": "6",
+          "date": "2026-03-17",
+          "conditions": "windy",
+          "icon": "wind.svg",
+          "avewind": {
+            "mph": "32mph",
+            "kph": "51kph",
+            "dir": "W"
+          },
+          "forecasted_snow_day_in": "0-1",
+          "forecasted_snow_day_cm": "0-3",
+          "forecasted_snow_night_in": "0-1",
+          "forecasted_snow_night_cm": "0-3"
+        },
+        "FourDay": {
+          "skies": "Windy. Windy",
+          "icon_fa": {
+            "style": "fa-kit",
+            "name": "fa-windy-and-sunny-light"
+          },
+          "temp_high_f": "20",
+          "temp_low_f": "20",
+          "temp_high_c": "-6",
+          "temp_low_c": "-7",
+          "forecasted_snow_in": "0",
+          "forecasted_snow_cm": "0",
+          "date": "2026-03-18",
+          "conditions": "windy",
+          "icon": "wind.svg",
+          "avewind": {
+            "mph": "14mph",
+            "kph": "23kph",
+            "dir": "W"
+          },
+          "forecasted_snow_day_in": "0",
+          "forecasted_snow_day_cm": "0",
+          "forecasted_snow_night_in": "0",
+          "forecasted_snow_night_cm": "0"
+        },
+        "FiveDay": {
+          "skies": "Windy. Mostly Cloudy",
+          "icon_fa": {
+            "style": "fa-kit",
+            "name": "fa-windy-and-sunny-light"
+          },
+          "temp_high_f": "31",
+          "temp_low_f": "30",
+          "temp_high_c": "-1",
+          "temp_low_c": "-1",
+          "forecasted_snow_in": "1",
+          "forecasted_snow_cm": "3",
+          "date": "2026-03-19",
+          "conditions": "windy",
+          "icon": "wind.svg",
+          "avewind": {
+            "mph": "16mph",
+            "kph": "26kph",
+            "dir": "SSW"
+          },
+          "forecasted_snow_day_in": "0-1",
+          "forecasted_snow_day_cm": "0-3",
+          "forecasted_snow_night_in": "0",
+          "forecasted_snow_night_cm": "0"
+        }
+      },
+      "Forecasts": [
+        {
+          "ResortName": "Stratton",
+          "FeedSavedTime": "2026-03-15T04:55:25-0600",
+          "TempHighF": "29",
+          "TempLowF": "28",
+          "TempHighC": "-2",
+          "TempHigh_c": "-2",
+          "TempLowC": "-2",
+          "ForecastedSnowIn": "0",
+          "ForecastedSnowCm": "0",
+          "DayComments": "Mostly cloudy, with a high near 37. Calm wind becoming southeast 5 to 8 mph in the afternoon. ",
+          "NightComments": "A chance of freezing rain before 4am, then rain likely, possibly mixed with freezing rain.  Increasing clouds, with a low around 28. Southeast wind 10 to 13 mph, with gusts as high as 28 mph.  Chance of precipitation is 60%. New ice accumulation of less than a 0.1 of an inch possible. ",
+          "OneDay": {
+            "skies": "Windy. Windy",
+            "icon_fa": {
+              "style": "fa-kit",
+              "name": "fa-windy-and-sunny-light"
+            },
+            "temp_high_f": "29",
+            "temp_low_f": "28",
+            "temp_high_c": "-2",
+            "temp_low_c": "-2",
+            "forecasted_snow_in": "0",
+            "forecasted_snow_cm": "0",
+            "date": "2026-03-15",
+            "conditions": "windy",
+            "icon": "wind.svg",
+            "avewind": {
+              "mph": "11mph",
+              "kph": "18kph",
+              "dir": "SE"
+            },
+            "forecasted_snow_day_in": "0",
+            "forecasted_snow_day_cm": "0",
+            "forecasted_snow_night_in": "0",
+            "forecasted_snow_night_cm": "0"
+          },
+          "TwoDay": {
+            "skies": "Snow and Rain. Scattered Thunderstorms",
+            "icon_fa": {
+              "style": "fa-light",
+              "name": "fa-snowflake"
+            },
+            "temp_high_f": "51",
+            "temp_low_f": "27",
+            "temp_high_c": "10",
+            "temp_low_c": "-3",
+            "forecasted_snow_in": "1",
+            "forecasted_snow_cm": "3",
+            "date": "2026-03-16",
+            "conditions": "rain_snow",
+            "icon": "snow.svg",
+            "avewind": {
+              "mph": "30mph",
+              "kph": "48kph",
+              "dir": "SSE"
+            },
+            "forecasted_snow_day_in": "0",
+            "forecasted_snow_day_cm": "0",
+            "forecasted_snow_night_in": "0-1",
+            "forecasted_snow_night_cm": "0-3"
+          },
+          "ThreeDay": {
+            "skies": "Windy. Windy",
+            "icon_fa": {
+              "style": "fa-kit",
+              "name": "fa-windy-and-sunny-light"
+            },
+            "temp_high_f": "24",
+            "temp_low_f": "9",
+            "temp_high_c": "-4",
+            "temp_low_c": "-13",
+            "forecasted_snow_in": "2",
+            "forecasted_snow_cm": "6",
+            "date": "2026-03-17",
+            "conditions": "windy",
+            "icon": "wind.svg",
+            "avewind": {
+              "mph": "32mph",
+              "kph": "51kph",
+              "dir": "W"
+            },
+            "forecasted_snow_day_in": "0-1",
+            "forecasted_snow_day_cm": "0-3",
+            "forecasted_snow_night_in": "0-1",
+            "forecasted_snow_night_cm": "0-3"
+          },
+          "FourDay": {
+            "skies": "Windy. Windy",
+            "icon_fa": {
+              "style": "fa-kit",
+              "name": "fa-windy-and-sunny-light"
+            },
+            "temp_high_f": "20",
+            "temp_low_f": "20",
+            "temp_high_c": "-6",
+            "temp_low_c": "-7",
+            "forecasted_snow_in": "0",
+            "forecasted_snow_cm": "0",
+            "date": "2026-03-18",
+            "conditions": "windy",
+            "icon": "wind.svg",
+            "avewind": {
+              "mph": "14mph",
+              "kph": "23kph",
+              "dir": "W"
+            },
+            "forecasted_snow_day_in": "0",
+            "forecasted_snow_day_cm": "0",
+            "forecasted_snow_night_in": "0",
+            "forecasted_snow_night_cm": "0"
+          },
+          "FiveDay": {
+            "skies": "Windy. Mostly Cloudy",
+            "icon_fa": {
+              "style": "fa-kit",
+              "name": "fa-windy-and-sunny-light"
+            },
+            "temp_high_f": "31",
+            "temp_low_f": "30",
+            "temp_high_c": "-1",
+            "temp_low_c": "-1",
+            "forecasted_snow_in": "1",
+            "forecasted_snow_cm": "3",
+            "date": "2026-03-19",
+            "conditions": "windy",
+            "icon": "wind.svg",
+            "avewind": {
+              "mph": "16mph",
+              "kph": "26kph",
+              "dir": "SSW"
+            },
+            "forecasted_snow_day_in": "0-1",
+            "forecasted_snow_day_cm": "0-3",
+            "forecasted_snow_night_in": "0",
+            "forecasted_snow_night_cm": "0"
+          }
+        }
+      ],
+      "ParkingLots": [],
+      "LayoutOptions": {
+        "soldOut": "false",
+        "PrimaryWeather": "toggle_base",
+        "SecondaryWeather": [
+          "toggle_overnight",
+          "toggle_24",
+          "season_total"
+        ],
+        "Weather": [
+          "toggle_overnight",
+          "toggle_24",
+          "season_total"
+        ],
+        "SnowfallChart": "false",
+        "Disclaimer": "All lodging, daily lift ticket, ski & snowboard rentals, lessons and activity purchases must be made online, in advance of your arrival.",
+        "Maps": [
+          {
+            "Title": "Village Map",
+            "MapUrl": "https://www.stratton.com/-/media/stratton/pdfs/maps/231110_villagemap",
+            "MapType": "image",
+            "ThumbnailUrl": "https://www.stratton.com/-/media/stratton/pdfs/maps/231110_villagemap_560x315"
+          },
+          {
+            "Title": "Interactive Trail Map",
+            "MapUrl": "https://www.stratton.com/the-mountain/interactive-trail-map",
+            "MapType": "image",
+            "ThumbnailUrl": "https://www.stratton.com/-/media/stratton/pdfs/maps/231110_interactivewintermap_560x315"
+          },
+          {
+            "Title": "Trail Map",
+            "MapUrl": "https://www.stratton.com/-/media/stratton/pdfs/maps/231110_trailmap",
+            "MapType": "image",
+            "ThumbnailUrl": "https://www.stratton.com/-/media/stratton/pdfs/maps/231110_trailmap_560x315"
+          }
+        ],
+        "AdditionalResources": [
+          {
+            "Title": "Things To Do",
+            "Url": "https://www.stratton.com/things-to-do"
+          },
+          {
+            "Title": "Resort Hours",
+            "Url": "https://www.stratton.com/the-mountain/hours-of-operation"
+          },
+          {
+            "Title": "Trail Map",
+            "Url": "https://www.stratton.com/-/media/stratton/pdfs/maps/231110_trailmap"
+          },
+          {
+            "Title": "View Webcams",
+            "Url": "https://www.stratton.com/the-mountain/webcams"
+          },
+          {
+            "Title": "Contact Us",
+            "Url": "https://www.stratton.com/contact-us"
+          }
+        ],
+        "PromoImages": {
+          "DesktopUrl": "https://www.stratton.com/-/media/Stratton/Mountain Report Banners/260121_lunarlaps_970x90",
+          "MobileUrl": "https://www.stratton.com/-/media/Stratton/Mountain Report Banners/260121_lunarlaps_480x270",
+          "LinkUrl": "https://www.stratton.com/things-to-do/events/night-skiing"
+        },
+        "MoreInfoLinks": {
+          "MoreActivitiesInfo": [
+            {
+              "Title": "Book Activities",
+              "Url": "https://www.stratton.com/things-to-do/activities"
+            }
+          ]
+        }
+      },
+      "DigitalSignage": "--"
+    }
+  ]
+}

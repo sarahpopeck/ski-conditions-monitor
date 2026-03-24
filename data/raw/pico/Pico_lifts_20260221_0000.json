@@ -1,0 +1,119 @@
+[
+  {
+    "id": "3742b55c-9d1c-4d3b-8414-e00a834c7e5b",
+    "name": "Bonanza Carpet",
+    "sector": {
+      "uuid": "69d176d6-6927-4c20-ad8b-fc1d6f445063",
+      "name": "Bonanza"
+    },
+    "type": "carpet",
+    "vertical": "75",
+    "notes": "",
+    "hours": "8:30 - 4:00",
+    "season": "all",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1730477217,
+    "updated": 1771620921,
+    "weight": 0
+  },
+  {
+    "id": "b26e7fdc-c00a-4dbc-9060-6d64bd69142e",
+    "name": "Little Pico Triple",
+    "sector": {
+      "uuid": "3f3cc58a-be4d-40be-8960-e8348fb42edb",
+      "name": "Little Pico"
+    },
+    "type": "triple",
+    "vertical": "635",
+    "notes": "",
+    "hours": "8:30 - 4:00",
+    "season": "all",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1730477217,
+    "updated": 1771620922,
+    "weight": 0
+  },
+  {
+    "id": "132db01a-604b-4388-9318-f78469d92f28",
+    "name": "Outpost Double",
+    "sector": {
+      "uuid": "09750170-eefd-4b3e-a68d-51b5161e5b4f",
+      "name": "Outpost"
+    },
+    "type": "double",
+    "vertical": "509",
+    "notes": "",
+    "hours": "",
+    "season": "all",
+    "status": "closed",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1730477217,
+    "updated": 1771620922,
+    "weight": 0
+  },
+  {
+    "id": "9ea850a7-eae9-4187-9a8f-2abe3ac6917a",
+    "name": "Knomes Knoll Triple",
+    "sector": [],
+    "type": "triple",
+    "vertical": "365",
+    "notes": "",
+    "hours": "8:30 - 4:00",
+    "season": "all",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1730477217,
+    "updated": 1771620922,
+    "weight": 0
+  },
+  {
+    "id": "c9bf3aad-412f-4c1d-94c4-17b239f618a8",
+    "name": "Golden Express Quad",
+    "sector": {
+      "uuid": "c0f53876-52cd-48a4-875a-2193dc75c005",
+      "name": "Golden"
+    },
+    "type": "quad",
+    "vertical": "836",
+    "notes": "",
+    "hours": "8:30 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1730568424,
+    "updated": 1771620922,
+    "weight": 0
+  },
+  {
+    "id": "9fc04260-4cb7-417a-954a-6d7c908a6441",
+    "name": "Summit Express Quad",
+    "sector": {
+      "uuid": "21572edb-af9d-4000-97a0-a3950c3f1a3c",
+      "name": "Summit"
+    },
+    "type": "quad",
+    "vertical": "1,565",
+    "notes": "",
+    "hours": "8:30 - 4:00",
+    "season": "winter",
+    "status": "expected",
+    "capacity": "",
+    "occupancy": "",
+    "wait_time": "",
+    "created": 1730568495,
+    "updated": 1771620923,
+    "weight": 0
+  }
+]
