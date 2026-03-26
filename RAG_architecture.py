@@ -158,13 +158,6 @@ Instructions:
 2. 3-5 sentence reasoning based on the summary and trails.
 3. Reference temps, snowfall, wind, and trail availability if present.
 4. Do NOT repeat raw chunks from ingested documents.
-5. Focus on today only.
-
-Return format:
-{
-  "decision": "YES/NO",
-  "explanation": "concise reasoning"
-}
 """
     response = ollama.chat(model=model, messages=[{"role": "user", "content": prompt}])
     return response["message"]["content"]
