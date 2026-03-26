@@ -4,9 +4,8 @@ import uuid
 import numpy as np
 import redis
 import ollama
+import psycopg2
 from datetime import datetime, date, timedelta
-from sqlalchemy import create_engine, text
-from sqlalchemy.orm import sessionmaker
 from sentence_transformers import SentenceTransformer
 
 QUESTION = "Is this a good day to go skiing?"
@@ -30,14 +29,31 @@ INDEX_NAME = "ski_index"
 CHUNK_SIZE = 300
 OVERLAP = 50
 
-POSTGRES_URL = os.getenv("POSTGRES_URL", "postgresql://airflow:airflow@localhost:5432/airflow")
-engine = create_engine(POSTGRES_URL)
-Session = sessionmaker(bind=engine)
+# Postgres connection parameters
+DB_PARAMS = {
+    "dbname": "postgres",  # replace with your DB name
+    "user": "postgres",    # replace with your DB user
+    "password": "",        # replace if needed
+    "host": "localhost",
+    "port": 5432
+}
 
+# Redis & Embedding
 r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, decode_responses=False)
 embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 
 
+# --------------------------
+# Postgres Connection
+# --------------------------
+def get_connection():
+    conn = psycopg2.connect(**DB_PARAMS)
+    return conn
+
+
+# --------------------------
+# JSON Helpers
+# --------------------------
 def make_json_safe(obj):
     from decimal import Decimal
     if isinstance(obj, (datetime, date)):
@@ -56,6 +72,9 @@ def safe_json_dump(data):
     return json.dumps(safe) if isinstance(safe, (dict, list)) else str(safe)
 
 
+# --------------------------
+# Embedding / RAG Helpers
+# --------------------------
 def get_embedding(text):
     vec = embedding_model.encode(text)
     return np.array(vec).astype(np.float32)
@@ -138,17 +157,17 @@ def search_chunks(query, top_k=6):
     return sorted(context, key=lambda x: x["score"], reverse=True)[:top_k]
 
 
+# --------------------------
+# AI Evaluation
+# --------------------------
 def generate_analysis(resort, weather_summary, model):
     context = search_chunks(weather_summary)
     context_str = "\n\n".join([f"[Source: {c['source']}]\n{c['chunk']}" for c in context])
     prompt = f"""
-    
 You are a ski conditions analyst for {resort}.
 
 Weather and conditions summary:
 {weather_summary}
-
-
 
 Question:
 {QUESTION}
@@ -179,52 +198,79 @@ Return:
     return response["message"]["content"]
 
 
+# --------------------------
+# Fetch resort snapshots from Postgres
+# --------------------------
 def fetch_resort_full_snapshot(resort, start_ts, end_ts):
-    session = Session()
+    conn = get_connection()
     data = {}
-
-    # Get conditions snapshot
-    table = f"feat_{resort.lower()}_conditions_snapshot"
-    try:
-        row = session.execute(text(f"SELECT * FROM {table} ORDER BY ingested_at DESC LIMIT 1")).fetchone()
-        data["conditions_snapshot"] = dict(row._mapping) if row else {}
-    except:
-        data["conditions_snapshot"] = {}
-
-    # Trails
-    table = f"feat_{resort.lower()}_open_trails_by_difficulty"
-    try:
-        row = session.execute(text(f"SELECT * FROM {table} ORDER BY ingested_at DESC LIMIT 1")).fetchone()
-        data["trails_by_difficulty"] = dict(row._mapping) if row else {}
-    except:
-        data["trails_by_difficulty"] = {}
+    cursor = conn.cursor()
 
     # Daily forecast
     try:
-        row = session.execute(
-            text("SELECT * FROM openmeteo_daily WHERE resort = :resort AND date_utc = :date LIMIT 1"),
-            {"resort": resort, "date": start_ts.date()},
-        ).fetchone()
-        data["openmeteo_daily"] = dict(row._mapping) if row else {}
+        cursor.execute("""
+        WITH latest_weather AS (
+            SELECT *
+            FROM (
+                SELECT *,
+                       ROW_NUMBER() OVER (PARTITION BY resort, target_ski_date ORDER BY forecast_run_at DESC) AS rn
+                FROM openmeteo_features_daily
+            ) t
+            WHERE rn = 1
+        )
+        SELECT *
+        FROM latest_weather
+        WHERE resort = %s AND target_ski_date = %s
+        """, (resort, start_ts.date()))
+        row = cursor.fetchone()
+        data["openmeteo_daily"] = dict(zip([desc[0] for desc in cursor.description], row)) if row else {}
     except:
         data["openmeteo_daily"] = {}
 
     # Hourly forecast
     try:
-        rows = session.execute(
-            text(
-                "SELECT * FROM openmeteo_hourly WHERE resort = :resort AND time_utc >= :start AND time_utc < :end ORDER BY time_utc ASC"
-            ),
-            {"resort": resort, "start": start_ts, "end": end_ts},
-        ).fetchall()
-        data["openmeteo_hourly"] = [dict(r._mapping) for r in rows] if rows else []
+        cursor.execute("""
+        SELECT *
+        FROM openmeteo_hourly
+        WHERE resort = %s AND time_utc >= %s AND time_utc < %s
+        ORDER BY time_utc ASC
+        """, (resort, start_ts.isoformat(), end_ts.isoformat()))
+        rows = cursor.fetchall()
+        data["openmeteo_hourly"] = [dict(zip([desc[0] for desc in cursor.description], r)) for r in rows] if rows else []
     except:
         data["openmeteo_hourly"] = []
 
-    session.close()
+    # Trail info / conditions snapshot
+    try:
+        cursor.execute("""
+        WITH latest_resort AS (
+            SELECT *
+            FROM (
+                SELECT *,
+                       ROW_NUMBER() OVER (PARTITION BY resort, report_date ORDER BY resort_updated_at DESC) AS rn
+                FROM resort_status_daily
+            ) t
+            WHERE rn = 1
+        )
+        SELECT *
+        FROM latest_resort
+        WHERE resort = %s AND report_date = %s
+        """, (resort, start_ts.date()))
+        row = cursor.fetchone()
+        trails_conditions = dict(zip([desc[0] for desc in cursor.description], row)) if row else {}
+        data["trails_by_difficulty"] = trails_conditions
+        data["conditions_snapshot"] = trails_conditions
+    except:
+        data["trails_by_difficulty"] = {}
+        data["conditions_snapshot"] = {}
+
+    conn.close()
     return data
 
 
+# --------------------------
+# Evaluate & Aggregate
+# --------------------------
 def evaluate_resort_day(resort, day, day_data):
     weather_summary = f"Daily forecast: {day_data.get('openmeteo_daily', {})}\nHourly: {day_data.get('openmeteo_hourly', {})}"
     models = RESORT_MODELS.get(resort, ["mistral:latest", "llama2", "phi3:latest", "mistral:latest"])
