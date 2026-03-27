@@ -7,11 +7,14 @@ services:
       POSTGRES_DB: airflow
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U airflow -d airflow"]
       interval: 5s
       timeout: 5s
       retries: 20
+      
 
   # Redis stack w/ vector search enabled
 
@@ -28,7 +31,7 @@ services:
   # Airflow init
 
   airflow-init:
-    image: apache/airflow:2.8.1
+    build: .
     depends_on:
       postgres:
         condition: service_healthy
@@ -42,16 +45,13 @@ services:
       - ./data:/opt/airflow/project/data
     command: >
       bash -c "
-      pip install --no-cache-dir requests &&
       airflow db init &&
       airflow users create --username admin --password admin --firstname admin --lastname user --role Admin --email nicholas.nehemia95@gmail.com || true
       "
     restart: "no"
 
-  # Airflow webserver
-
   airflow-webserver:
-    image: apache/airflow:2.8.1
+    build: .
     depends_on:
       postgres:
         condition: service_healthy
@@ -59,7 +59,8 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
-      AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3VouvzJQp5csdwiIbWEY"
+      AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3vOu_zJQp5csdwiIbWEY"
+      AIRFLOW_CONN_SKI_PG: postgresql://airflow:airflow@postgres:5432/ski_pipeline
       PYTHONPATH: /opt/airflow/project
     volumes:
       - ./dags:/opt/airflow/dags
@@ -67,16 +68,10 @@ services:
       - ./data:/opt/airflow/project/data
     ports:
       - "8080:8080"
-    command: >
-      bash -c "
-      pip install --no-cache-dir requests &&
-      airflow webserver
-      "
-
-  # Airflow scheduler
+    command: airflow webserver
 
   airflow-scheduler:
-    image: apache/airflow:2.8.1
+    build: .
     hostname: airflow-scheduler
     depends_on:
       postgres:
@@ -86,16 +81,13 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
       PYTHONPATH: /opt/airflow/project
-      AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3VouvzJQp5csdwiIbWEY"
+      AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3vOu_zJQp5csdwiIbWEY"
+      AIRFLOW_CONN_SKI_PG: postgresql://airflow:airflow@postgres:5432/ski_pipeline
     volumes:
       - ./dags:/opt/airflow/dags
       - ./runner.py:/opt/airflow/project/runner.py
       - ./data:/opt/airflow/project/data
-    command: >
-      bash -c "
-      pip install --no-cache-dir requests &&
-      airflow scheduler
-      "
+    command: airflow scheduler
 
 volumes:
   postgres-db-volume:
