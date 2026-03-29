@@ -43,6 +43,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./runner.py:/opt/airflow/project/runner.py
       - ./data:/opt/airflow/project/data
+      - ./.env:/opt/airflow/project/.env:ro
     command: >
       bash -c "
       airflow db init &&
@@ -66,6 +67,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./runner.py:/opt/airflow/project/runner.py
       - ./data:/opt/airflow/project/data
+      - ./.env:/opt/airflow/project/.env:ro
     ports:
       - "8080:8080"
     command: airflow webserver
@@ -87,6 +89,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./runner.py:/opt/airflow/project/runner.py
       - ./data:/opt/airflow/project/data
+      - ./.env:/opt/airflow/project/.env:ro
     command: airflow scheduler
 
 volumes:

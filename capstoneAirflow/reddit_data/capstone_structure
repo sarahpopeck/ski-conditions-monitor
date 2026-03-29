@@ -1,0 +1,43 @@
+📦capstoneAirflow
+ ┣ 📂__pycache__
+ ┃ ┗ 📜runner.cpython-313.pyc
+ ┣ 📂dags
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┣ 📜ski_ingest_dq.cpython-310.pyc
+ ┃ ┃ ┣ 📜ski_ingest_dq.cpython-38.pyc
+ ┃ ┃ ┣ 📜ski_openmeteo_ingest.cpython-310.pyc
+ ┃ ┃ ┗ 📜ski_openmeteo_ingest.cpython-38.pyc
+ ┃ ┣ 📜ski_ingest_dq.py
+ ┃ ┗ 📜ski_openmeteo_ingest.py
+ ┣ 📂data
+ ┃ ┣ 📂raw
+ ┃ ┃ ┣ 📂killington
+ ┃ ┃ ┣ 📂loon
+ ┃ ┃ ┣ 📂pico
+ ┃ ┃ ┣ 📂stratton
+ ┃ ┃ ┣ 📂sugarbush
+ ┃ ┃ ┣ 📂sugarloaf
+ ┃ ┃ ┣ 📂sundayriver
+ ┣ 📂reddit_data
+ ┃ ┣ 📜check_reddit_data.ipynb
+ ┃ ┣ 📜dataset_reddit-scraper_2026-03-24_00-00-33-244.json
+ ┃ ┣ 📜dataset_reddit-scraper_2026-03-24_18-29-51-236.json
+ ┃ ┗ 📜reddit_pipeline.md
+ ┣ 📜.DS_Store
+ ┣ 📜.env
+ ┣ 📜Dockerfile
+ ┣ 📜Golden Dataset.xlsx
+ ┣ 📜PostGres Create.sql
+ ┣ 📜PostGres Create.sql.sql
+ ┣ 📜checking.ipynb
+ ┣ 📜docker-compose (1).yaml
+ ┣ 📜docker-compose.yaml
+ ┣ 📜pipeline_readme.md
+ ┣ 📜reddit_apify.py
+ ┣ 📜reddit_apify_results.csv
+ ┣ 📜reddit_apify_results.json
+ ┣ 📜requirements.txt
+ ┣ 📜runner.py
+ ┣ 📜ski_pipeline.dump
+ ┣ 📜text
+ ┗ 📜~$Golden Dataset.xlsx

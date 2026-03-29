@@ -3,3 +3,14 @@ charset-normalizer==3.4.4
 idna==3.11
 requests==2.32.5
 urllib3==2.6.3
+pandas
+psycopg2-binary
+sqlalchemy
+jupyter
+ipykernel
+langchain-core
+langchain-mistralai
+pydantic
+python-dotenv
+apache-airflow-providers-postgres
+boto3
