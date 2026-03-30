@@ -8,6 +8,9 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple, Iterable
 
+import boto3
+from botocore.exceptions import ClientError
+
 import pandas as pd
 import requests
 
@@ -22,7 +25,8 @@ HEADERS = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 LOCAL_TZ = "America/New_York"
 SKI_HOURS_START = 9
 SKI_HOURS_END = 16
-
+AWS_REGION = "us-east-1"
+RAW_S3_BUCKET = "ski-data-raw"
 
 # ---------- Open-Meteo Resort Coordinates ----------
 RESORT_COORDS = {
@@ -576,9 +580,105 @@ def main() -> int:
         print(str(e), file=sys.stderr)
         return 1
 
+
+# ============================================================
+# AWS SSM + S3 HELPERS
+# ============================================================
+
+def get_ssm_parameter(name: str, region_name: str = AWS_REGION) -> str:
+    """
+    Read a parameter from AWS SSM Parameter Store.
+    Uses WithDecryption=True so SecureString works.
+    """
+    ssm = boto3.client("ssm", region_name=region_name)
+    resp = ssm.get_parameter(Name=name, WithDecryption=True)
+    return resp["Parameter"]["Value"]
+
+
+def get_pipeline_secret(secret_name: str) -> str:
+    """
+    Central secret resolver for pipeline secrets stored in SSM.
+    """
+    secret_map = {
+        "APIFY_TOKEN": "/ski-pipeline/APIFY_TOKEN",
+        "MISTRAL_API_KEY": "/ski-pipeline/MISTRAL_API_KEY",
+    }
+
+    if secret_name not in secret_map:
+        raise ValueError(f"Unsupported secret name: {secret_name}")
+
+    return get_ssm_parameter(secret_map[secret_name])
+
+
+def upload_file_to_s3(
+    local_path: str,
+    bucket: str,
+    s3_key: str,
+    region_name: str = AWS_REGION,
+) -> str:
+    """
+    Upload a local file to S3.
+    Returns the s3:// URI.
+    """
+    s3 = boto3.client("s3", region_name=region_name)
+    s3.upload_file(local_path, bucket, s3_key)
+    return f"s3://{bucket}/{s3_key}"
+
+
+def build_raw_s3_key(local_path: str) -> str:
+    """
+    Map local raw paths to bucket keys.
+
+    Examples:
+    /opt/airflow/project/data/raw/loon/Loon_reportpal_20260329_1900.json
+      -> raw/resort/loon/Loon_reportpal_20260329_1900.json
+
+    /opt/airflow/project/data/raw/openmeteo/loon/Loon_forecast_20260329_1900.json
+      -> raw/openmeteo/loon/Loon_forecast_20260329_1900.json
+
+    /opt/airflow/project/data/raw/reddit/dataset_reddit-scraper_2026-03-29_19-00-00-000.json
+      -> raw/reddit/dataset_reddit-scraper_2026-03-29_19-00-00-000.json
+    """
+    p = Path(local_path)
+    parts = p.parts
+
+    if "raw" not in parts:
+        raise ValueError(f"Path does not appear to be under raw/: {local_path}")
+
+    raw_idx = parts.index("raw")
+    after_raw = list(parts[raw_idx + 1:])
+
+    if not after_raw:
+        raise ValueError(f"Cannot build S3 key from path: {local_path}")
+
+    top = after_raw[0]
+
+    if top == "reddit":
+        return f"raw/reddit/{p.name}"
+
+    if top == "openmeteo":
+        if len(after_raw) >= 2:
+            resort = after_raw[1]
+            return f"raw/openmeteo/{resort}/{p.name}"
+        return f"raw/openmeteo/{p.name}"
+
+    # everything else under raw/ is treated as resort raw data
+    resort = top
+    return f"raw/resort/{resort}/{p.name}"
+
+
+def upload_raw_file_to_s3(
+    local_path: str,
+    bucket: str = RAW_S3_BUCKET,
+) -> str:
+    s3_key = build_raw_s3_key(local_path)
+    return upload_file_to_s3(local_path=local_path, bucket=bucket, s3_key=s3_key)
+
+
 # ============================================================
 # REDDIT / APIFY FUNCTIONS START HERE
 # ============================================================
+
 
 def get_project_root(start_path: Optional[Path] = None) -> Path:
     """
@@ -661,9 +761,9 @@ def fetch_reddit_apify_items(
     """
     load_project_env()
 
-    token = apify_token or os.getenv("APIFY_TOKEN")
+    token = apify_token or get_pipeline_secret("APIFY_TOKEN")
     if not token:
-        raise ValueError("APIFY_TOKEN not found in environment or .env")
+        raise ValueError("APIFY_TOKEN not found in SSM")
 
     url = (
         "https://api.apify.com/v2/acts/"
@@ -945,10 +1045,9 @@ def _build_mistral_reddit_chain(
             "pydantic and langchain_mistralai are required for reddit labeling"
         ) from e
 
-    load_project_env()
-    mistral_api_key = os.getenv("MISTRAL_API_KEY")
+    mistral_api_key = get_pipeline_secret("MISTRAL_API_KEY")
     if not mistral_api_key:
-        raise ValueError("MISTRAL_API_KEY not found in environment or .env")
+        raise ValueError("MISTRAL_API_KEY not found in SSM")
 
     class RedditLabel(BaseModel):
         report_type: str = Field(description="field_report / forecast_opinion / other")

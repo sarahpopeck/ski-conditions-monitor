@@ -19,6 +19,7 @@ from runner import (  # noqa: E402
     cmd_validate,
     load_raw,
     parse_openmeteo_hourly,
+    upload_raw_file_to_s3,
 )
 
 JOB_IDS = [
@@ -59,6 +60,12 @@ with DAG(
     @task
     def extract(job_id: str) -> str:
         return cmd_extract(job_id)
+
+    @task
+    def upload_raw(job_id: str, file_path: str) -> str:
+        s3_uri = upload_raw_file_to_s3(file_path)
+        print(f"[s3] uploaded {job_id} raw file to {s3_uri}")
+        return file_path
 
     @task
     def validate(job_id: str, file_path: str) -> str:
@@ -223,9 +230,11 @@ with DAG(
 
                 run_anchor = EmptyOperator(task_id=run_anchor_local)
                 skip = EmptyOperator(task_id=skip_local)
+
                 fp = extract.override(task_id=f"extract__{ds}")(jid)
-                ok_fp = validate.override(task_id=f"validate__{ds}")(jid, fp)
+                fp_uploaded = upload_raw.override(task_id=f"upload_raw__{ds}")(jid, fp)
+                ok_fp = validate.override(task_id=f"validate__{ds}")(jid, fp_uploaded)
                 load = load_to_db.override(task_id=f"load__{ds}")(jid, ok_fp)
 
                 branch >> [run_anchor, skip]
-                run_anchor >> fp >> ok_fp >> load
+                run_anchor >> fp >> fp_uploaded >> ok_fp >> load

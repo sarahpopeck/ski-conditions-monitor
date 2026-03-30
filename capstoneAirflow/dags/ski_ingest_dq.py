@@ -19,6 +19,7 @@ from runner import (  # noqa: E402
     parse_resort_family_boyne,
     parse_resort_family_killington,
     parse_resort_family_mountainpowder,
+    upload_raw_file_to_s3,
 )
 
 JOB_FAMILIES = {
@@ -59,6 +60,12 @@ with DAG(
     @task
     def extract(job_id: str) -> str:
         return cmd_extract(job_id)
+
+    @task
+    def upload_raw(job_id: str, file_path: str) -> str:
+        s3_uri = upload_raw_file_to_s3(file_path)
+        print(f"[s3] uploaded {job_id} raw file to {s3_uri}")
+        return file_path
 
     @task
     def validate(job_id: str, file_path: str) -> str:
@@ -181,11 +188,15 @@ with DAG(
                 )
                 run_anchor = EmptyOperator(task_id=run_anchor_local)
                 skip = EmptyOperator(task_id=skip_local)
+
                 fp = extract.override(task_id="extract")(jid)
-                ok_fp = validate.override(task_id="validate")(jid, fp)
+                fp_uploaded = upload_raw.override(task_id="upload_raw")(jid, fp)
+                ok_fp = validate.override(task_id="validate")(jid, fp_uploaded)
                 load = load_single_resort_row.override(task_id="load")(jid, ok_fp)
+
                 branch >> [run_anchor, skip]
-                run_anchor >> fp >> ok_fp >> load
+                run_anchor >> fp >> fp_uploaded >> ok_fp >> load
+
             else:
                 group = slug(resort)
                 branch = BranchPythonOperator(
@@ -201,16 +212,22 @@ with DAG(
                 skip = EmptyOperator(task_id="skip")
 
                 lifts_fp = extract.override(task_id="extract_lifts")(f"{resort}:lifts")
-                lifts_ok = validate.override(task_id="validate_lifts")(f"{resort}:lifts", lifts_fp)
+                lifts_uploaded = upload_raw.override(task_id="upload_lifts_raw")(f"{resort}:lifts", lifts_fp)
+                lifts_ok = validate.override(task_id="validate_lifts")(f"{resort}:lifts", lifts_uploaded)
+
                 trails_fp = extract.override(task_id="extract_trails")(f"{resort}:trails")
-                trails_ok = validate.override(task_id="validate_trails")(f"{resort}:trails", trails_fp)
+                trails_uploaded = upload_raw.override(task_id="upload_trails_raw")(f"{resort}:trails", trails_fp)
+                trails_ok = validate.override(task_id="validate_trails")(f"{resort}:trails", trails_uploaded)
+
                 snow_fp = extract.override(task_id="extract_snow_reports")(f"{resort}:snow_reports")
-                snow_ok = validate.override(task_id="validate_snow_reports")(f"{resort}:snow_reports", snow_fp)
+                snow_uploaded = upload_raw.override(task_id="upload_snow_reports_raw")(f"{resort}:snow_reports", snow_fp)
+                snow_ok = validate.override(task_id="validate_snow_reports")(f"{resort}:snow_reports", snow_uploaded)
 
                 load = load_killington_family.override(task_id="load")(resort, lifts_ok, trails_ok, snow_ok)
+
                 branch >> [run_anchor, skip]
                 run_anchor >> [lifts_fp, trails_fp, snow_fp]
-                lifts_fp >> lifts_ok
-                trails_fp >> trails_ok
-                snow_fp >> snow_ok
+                lifts_fp >> lifts_uploaded >> lifts_ok
+                trails_fp >> trails_uploaded >> trails_ok
+                snow_fp >> snow_uploaded >> snow_ok
                 [lifts_ok, trails_ok, snow_ok] >> load

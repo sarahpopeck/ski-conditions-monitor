@@ -14,21 +14,6 @@ services:
       interval: 5s
       timeout: 5s
       retries: 20
-      
-
-  # Redis stack w/ vector search enabled
-
-  redis:
-    image: redis/redis-stack:latest
-    container_name: redis-stack
-    ports:
-      - "6379:6379"
-      - "8001:8001"  # RedisInsight UI
-    volumes:
-      - redis-data:/data
-    restart: unless-stopped
-
-  # Airflow init
 
   airflow-init:
     build: .
@@ -39,11 +24,12 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__PARALLELISM: "2"
+      AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG: "1"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./runner.py:/opt/airflow/project/runner.py
       - ./data:/opt/airflow/project/data
-      - ./.env:/opt/airflow/project/.env:ro
     command: >
       bash -c "
       airflow db init &&
@@ -63,11 +49,12 @@ services:
       AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3vOu_zJQp5csdwiIbWEY"
       AIRFLOW_CONN_SKI_PG: postgresql://airflow:airflow@postgres:5432/ski_pipeline
       PYTHONPATH: /opt/airflow/project
+      AIRFLOW__CORE__PARALLELISM: "2"
+      AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG: "1"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./runner.py:/opt/airflow/project/runner.py
       - ./data:/opt/airflow/project/data
-      - ./.env:/opt/airflow/project/.env:ro
     ports:
       - "8080:8080"
     command: airflow webserver
@@ -85,13 +72,13 @@ services:
       PYTHONPATH: /opt/airflow/project
       AIRFLOW__WEBSERVER__SECRET_KEY: "j7duz280Bn_eZ8YsobCSSWF3vOu_zJQp5csdwiIbWEY"
       AIRFLOW_CONN_SKI_PG: postgresql://airflow:airflow@postgres:5432/ski_pipeline
+      AIRFLOW__CORE__PARALLELISM: "2"
+      AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG: "1"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./runner.py:/opt/airflow/project/runner.py
       - ./data:/opt/airflow/project/data
-      - ./.env:/opt/airflow/project/.env:ro
     command: airflow scheduler
 
 volumes:
   postgres-db-volume:
-  redis-data:

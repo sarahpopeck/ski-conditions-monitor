@@ -1,13 +1,11 @@
 from datetime import datetime, timedelta
 from pathlib import Path
-import json
 import pandas as pd
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.hooks.postgres_hook import PostgresHook
 
-# Import your runner functions
 from runner import (
     cmd_extract_reddit,
     prepare_reddit_new_rows,
@@ -15,6 +13,7 @@ from runner import (
     aggregate_reddit_resort_day_signals,
     write_df_json_records,
     read_df_json_records,
+    upload_raw_file_to_s3,
 )
 
 # -------------------------------
@@ -49,7 +48,6 @@ with DAG(
             timeframe="week",
             max_posts_per_query=100,
         )
-
         context["ti"].xcom_push(key="raw_file_path", value=file_path)
 
     extract_task = PythonOperator(
@@ -58,7 +56,24 @@ with DAG(
     )
 
     # -------------------------------
-    # 2. Prepare new rows
+    # 2. Upload raw extract to S3
+    # -------------------------------
+    def upload_raw_to_s3(**context):
+        ti = context["ti"]
+        raw_file_path = ti.xcom_pull(key="raw_file_path")
+
+        s3_uri = upload_raw_file_to_s3(raw_file_path)
+        print(f"[s3] uploaded raw reddit file to {s3_uri}")
+
+        ti.xcom_push(key="raw_s3_uri", value=s3_uri)
+
+    upload_s3_task = PythonOperator(
+        task_id="upload_reddit_raw_to_s3",
+        python_callable=upload_raw_to_s3,
+    )
+
+    # -------------------------------
+    # 3. Prepare new rows
     # -------------------------------
     def prepare_new_rows(**context):
         ti = context["ti"]
@@ -66,7 +81,6 @@ with DAG(
 
         hook = PostgresHook(postgres_conn_id="ski_pg")
 
-        # Get existing keys
         existing_keys_df = hook.get_pandas_df(
             "SELECT source_item_key FROM reddit_labeled"
         )
@@ -90,7 +104,7 @@ with DAG(
     )
 
     # -------------------------------
-    # 3. Label rows (Mistral)
+    # 4. Label rows (Mistral)
     # -------------------------------
     def label_rows(**context):
         ti = context["ti"]
@@ -114,7 +128,7 @@ with DAG(
     )
 
     # -------------------------------
-    # 4. Load + Aggregate + Upsert
+    # 5. Load + Aggregate + Upsert
     # -------------------------------
     def load_outputs(**context):
         ti = context["ti"]
@@ -126,9 +140,6 @@ with DAG(
         conn = hook.get_conn()
         cur = conn.cursor()
 
-        # -----------------------
-        # Insert into reddit_labeled
-        # -----------------------
         insert_labeled_sql = """
         INSERT INTO reddit_labeled (
             source_item_key,
@@ -185,16 +196,10 @@ with DAG(
         for row in labeled_rows:
             cur.execute(insert_labeled_sql, row)
 
-        # -----------------------
-        # Aggregate
-        # -----------------------
         agg_df = aggregate_reddit_resort_day_signals(df)
 
         print(f"[aggregate] rows: {len(agg_df)}")
 
-        # -----------------------
-        # Upsert aggregated table
-        # -----------------------
         insert_agg_sql = """
         INSERT INTO reddit_resort_day_signals (
             resort,
@@ -252,4 +257,4 @@ with DAG(
     # -------------------------------
     # Task order
     # -------------------------------
-    extract_task >> prepare_task >> label_task >> load_task
+    extract_task >> upload_s3_task >> prepare_task >> label_task >> load_task
