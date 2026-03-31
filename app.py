@@ -2,6 +2,8 @@ import streamlit as st
 from datetime import datetime, timedelta
 import pandas as pd
 import plotly.express as px
+import re
+from html import unescape
 
 from RAG_architecture import (
     run_full_daily_analysis,
@@ -10,6 +12,18 @@ from RAG_architecture import (
     fetch_resort_full_snapshot,
     ingest_corpus
 )
+
+
+def clean_mountain_report_text(text):
+    if not text:
+        return "N/A"
+    text = unescape(str(text))
+    text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"</p\s*>", "\n\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
 
 st.set_page_config(layout="wide")
 st.title("Ski Intelligence Dashboard")
@@ -109,26 +123,55 @@ for resort in selected_resorts:
             hourly_list = day_data.get("openmeteo_hourly") or []
             if hourly_list:
                 df = pd.DataFrame(hourly_list)
-                if "time_utc" in df.columns and "temperature_2m" in df.columns:
-                    df["time_utc"] = pd.to_datetime(df["time_utc"])
-                    fig = px.line(df, x="time_utc", y="temperature_2m", title="Hourly Temperature")
+                if "time_local" in df.columns and "temperature_2m_c" in df.columns:
+                    df["time_local"] = pd.to_datetime(df["time_local"])
+                    fig = px.line(df, x="time_local", y="temperature_2m_c", title="Hourly Temperature")
                     st.plotly_chart(fig, use_container_width=True)
             else:
                 st.info("Hourly temperature data not available")
 
-            # Trails info
             trails = day_data.get("trails_by_difficulty") or {}
+
             if trails:
                 with st.expander("Trails Open / Difficulty"):
-                    st.json(trails)
+
+                    def fmt(open_val, total_val):
+                        if open_val is None or total_val in (None, 0):
+                            return "N/A"
+                        pct = round((open_val / total_val) * 100)
+                        return f"{open_val} / {total_val} ({pct}%)"
+
+                    st.markdown("### 🎿 Trail Breakdown by Skill Level")
+
+                    col1, col2 = st.columns(2)
+
+                    with col1:
+                        st.markdown(f"**Novice:** {fmt(trails.get('novice_open'), trails.get('novice_total'))}")
+                        st.markdown(f"**Intermediate:** {fmt(trails.get('intermediate_open'), trails.get('intermediate_total'))}")
+
+                    with col2:
+                        st.markdown(f"**Advanced:** {fmt(trails.get('advanced_open'), trails.get('advanced_total'))}")
+                        st.markdown(f"**Expert:** {fmt(trails.get('expert_open'), trails.get('expert_total'))}")
+
             else:
                 st.info("Trail data not available")
 
             # Conditions snapshot
+
             conditions = day_data.get("conditions_snapshot") or {}
             if conditions:
                 with st.expander("Conditions Snapshot"):
-                    st.json(conditions)
+                    st.markdown(f"**Resort:** {conditions.get('resort', 'N/A')}")
+                    st.markdown(f"**Report Date:** {conditions.get('report_date', 'N/A')}")
+                    st.markdown(f"**Last Updated:** {conditions.get('resort_updated_at', 'N/A')}")
+                    st.markdown("")
+                    st.markdown(f"**Trails Open:** {conditions.get('trails_open', 'N/A')} / {conditions.get('trails_total', 'N/A')}")
+                    st.markdown(f"**Open Trails %:** {conditions.get('open_trails_pct', 'N/A')}")
+                    st.markdown(f"**Lifts Open:** {conditions.get('lifts_open', 'N/A')} / {conditions.get('lifts_total', 'N/A')}")
+                    st.markdown(f"**Open Lifts %:** {conditions.get('open_lifts_pct', 'N/A')}")
+                    st.markdown("")
+                    st.markdown("**Mountain Report**")
+                    st.write(clean_mountain_report_text(conditions.get("mountain_report_text")))
             else:
                 st.info("Conditions snapshot not available")
 

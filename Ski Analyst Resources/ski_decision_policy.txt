@@ -1,0 +1,111 @@
+Ski Day Decision Policy
+
+Core principles:
+- Structured resort operations data and mountain report are the primary signals.
+- Weather and surface conditions matter more than same-day snowfall alone.
+- If trails are open, assume there is adequate on-trail snow coverage.
+- Rain, ice, strong wind, and operational disruption are the most important negative factors.
+- Same-day snowfall is a quality booster, not a requirement for skiing.
+
+Operational interpretation rules:
+- Trails open > 0 means the resort has sufficient snow coverage on those trails.
+- Do NOT interpret 0 cm snowfall as “no snow exists.”
+- Snowfall mainly affects snow quality (softness, freshness), not basic skiability.
+- If lifts are 0% open but trails are open:
+  - Check mountain report text for explanation:
+    - off-hours / pre-opening
+    - wind holds
+    - mechanical issues
+    - delayed operations
+    - temporary closure
+  - If no clear explanation → reduce confidence, do NOT immediately label as No Go.
+
+Factor guidelines:
+
+Terrain availability:
+- High:
+  - Jan–Feb: >= 60% open
+  - Dec/March: >= 50% open
+- Medium:
+  - Jan–Feb: 35–59%
+  - Dec/March: 30–49%
+- Low:
+  - below those thresholds
+- Note:
+  - Reflects usable terrain, not snowfall.
+
+Snow quality:
+- High:
+  - fresh snowfall OR
+  - no rain damage + stable cold conditions
+- Medium:
+  - packed powder, groomed snow, older snow, mixed conditions
+- Low:
+  - rain-damaged snow, heavy thaw/freeze cycles, icy surface
+- Note:
+  - 0 cm snowfall can still be Medium or High if conditions are stable.
+
+Ice risk:
+- High:
+  - rain >= 0.3 inches + freeze OR strong ice signals
+- Medium:
+  - partial thaw/refreeze or moderate rain impact
+- Low:
+  - no rain and no freeze-thaw signals
+- Exception:
+  - if snowfall significantly exceeds prior rain, reduce ice risk.
+
+Lift hold risk:
+- High:
+  - wind >= 30 mph OR wind_hold_risk_flag = true OR mountain report indicates holds
+- Medium:
+  - elevated wind but no confirmed holds
+- Low:
+  - normal wind conditions
+- Note:
+  - distinguish weather-related lift risk vs off-hours closure.
+
+Temperature comfort:
+- High:
+  - comfortable skiing temperatures
+- Medium:
+  - cold but manageable
+- Low:
+  - extreme cold or dangerous wind chill
+
+Rain impact:
+- High:
+  - significant rain during or before ski day
+- Medium:
+  - light rain with possible surface degradation
+- Low:
+  - no rain
+- Note:
+  - rain impact is primarily through snow damage and icing.
+
+Mountain report usage:
+- Treat mountain report text as a strong operational signal.
+- Use it to interpret:
+  - lift status anomalies
+  - grooming conditions
+  - snow quality descriptions
+  - weather impacts
+- Prefer mountain report context over isolated conflicting metrics.
+
+Reddit usage:
+- Only a confirmation signal.
+- Do NOT override structured data.
+- If Reddit disagrees → slightly reduce confidence.
+
+Decision guidance:
+- “Go” if:
+  - resort is operational AND
+  - no major combination of rain damage, extreme ice, dangerous wind, or shutdowns.
+
+- “No Go” if:
+  - conditions are unsafe OR
+  - operations are significantly disrupted.
+
+- If signals conflict:
+  - choose the most operationally plausible interpretation
+  - reduce confidence instead of forcing a hard conclusion.
