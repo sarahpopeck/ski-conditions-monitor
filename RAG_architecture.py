@@ -9,6 +9,7 @@ import ollama
 import psycopg2
 import redis
 from sentence_transformers import SentenceTransformer
+import pandas as pd
 
 # --------------------------
 # Config
@@ -388,7 +389,7 @@ def fetch_resort_full_snapshot(resort, start_ts, end_ts):
                 min_temp_ski_hours_c,
                 max_temp_ski_hours_c,
                 avg_cloudcover_ski_hours_pct,
-                avg_wind_speed_ski_hours_kmh,
+                ROUND(avg_wind_speed_ski_hours_kmh::numeric, 2) AS avg_wind_speed_ski_hours_kmh,
                 max_wind_gust_ski_hours_kmh,
                 snowfall_ski_day_cm,
                 rain_ski_day_mm,

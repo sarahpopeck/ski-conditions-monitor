@@ -1,2 +1,18 @@
 .venv/
 unused/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Coverage
+.coveragerc
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
