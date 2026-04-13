@@ -286,16 +286,12 @@ Reddit daily signal:
 {STRICT_POLICY_TEXT}
 {context_block}
 
-Resort-day data:
-- Resort: {resort}
-- Date: {day}
+
 
 Terrain and operations:
 - Trails open: {conditions.get("trails_open", "N/A")}
-- Trails total: {conditions.get("trails_total", "N/A")}
 - Open trails pct: {conditions.get("open_trails_pct", "N/A")}
 - Lifts open: {conditions.get("lifts_open", "N/A")}
-- Lifts total: {conditions.get("lifts_total", "N/A")}
 - Open lifts pct: {conditions.get("open_lifts_pct", "N/A")}
 
 Weather and comfort:
