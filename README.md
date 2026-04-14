@@ -61,22 +61,39 @@ highlights the potential of LLM-based systems in domain-specific decision suppor
 
 ## Repository Structure
 ski-conditions-monitor/
+
 |-- capstoneAirflow/
+
 |   |-- dags/                 # DAGs
+
 |   |-- reddit_date/          # Original, immutable Reddit data and scripts
+
 |   |-- docker-compose.yaml   # Docker YAML
+
 |   |-- raw/                  # Original, immutable JSON data for resorts
+
 |   |-- tests/               # Test scripts
+
 |-- Reddit Data/
+
 |   |-- reddit_apify.py      # Reddit data loader
+
 |-- Ski Analyst Resources/   # RAG ingestion material; optimal ski conditions
+
 |-- SQL Scripts/             # Written SQL scripts for queries
+
 |-- .gitignore
+
 |-- Golden Dataset.xlsx     # Our Golden Truth dataset
+
 |-- Iteration 4: Report Draft.pdf # Iteration 4 Assignment
+
 |-- RAG_architecture.py     # RAG pipeline
+
 |-- README.md
+
 |-- app.py                  # Streamlit front-end interface
+
 |-- requirements.txt
 
 ## Installation and Requirements
