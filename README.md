@@ -38,18 +38,14 @@ The system is designed as a research-oriented prototype for AI-assisted forecast
 
 ## Dataset
 - Open-Meteo Weather Forecasts: Provides high-resolution, multi-model weather forecasts essential for evaluating ski conditions and forecast uncertainty.
-- National Weather Service Forecast Discussions: Supplies expert-written qualitative insights on forecast confidence, uncertainty, and potential hazards.
 - Reddit Ski Forums: Captures real-time, on-the-ground skier sentiment and condition reports not reflected in numerical forecasts.
 - OpenSnow Resort Data: Offers resort-level snowfall forecasts and condition summaries that mirror how skiers plan real trips.
+- Various open-source documents about optimal ski conditions
 
 ## Models Implemented
-- Mistral
+- Initial recommendation and ingestion system: phi4-mini and qwen3:4b
 
-An instruction-tuned large language model used to evaluate ski suitability based on structured forecast input.
-
-- Llama2
-
-An instruction-tuned large language model used as an independent evaluator for ski conditions.
+Instruction-tuned large language models used as an independent evaluator for ski conditions.
 
 - Final Aggregation Layer
 
@@ -57,10 +53,31 @@ The system synthesizes outputs from both models to produce a final recommendatio
 
 ## Key Results
 
-TBD
+The system produces consistent, interpretable daily condition ratings across multiple
+resorts, demonstrating strong alignment with reported conditions and enabling comparative
+analysis. By integrating heterogeneous data sources into a unified prediction framework,
+this tool reduces information search costs and improves trip planning for skiers. The approach
+highlights the potential of LLM-based systems in domain-specific decision support applications.
 
 ## Repository Structure
-TBD
+ski-conditions-monitor/
+|-- capstoneAirflow/
+|   |-- dags/                 # DAGs
+|   |-- reddit_date/          # Original, immutable Reddit data and scripts
+|   |-- docker-compose.yaml   # Docker YAML
+|   |-- raw/                  # Original, immutable JSON data for resorts
+|   |-- tests/               # Test scripts
+|-- Reddit Data/
+|   |-- reddit_apify.py      # Reddit data loader
+|-- Ski Analyst Resources/   # RAG ingestion material; optimal ski conditions
+|-- SQL Scripts/             # Written SQL scripts for queries
+|-- .gitignore
+|-- Golden Dataset.xlsx     # Our Golden Truth dataset
+|-- Iteration 4: Report Draft.pdf # Iteration 4 Assignment
+|-- RAG_architecture.py     # RAG pipeline
+|-- README.md
+|-- app.py                  # Streamlit front-end interface
+|-- requirements.txt
 
 ## Installation and Requirements
 1. Clone the Repository
@@ -85,7 +102,11 @@ pip install -r requirements.txt
 
 ## Future Work
 
-TBD
+1. Expand the dataset to include additional ski resorts and multi-season historical weather data across the East Coast. This would improve generalization and reduce sensitivity to location-specific patterns currently learned from a limited set of resorts.
+
+2. Deploy the system as a production-ready API with real-time weather ingestion and monitoring. This would enable continuous updating of predictions and facilitate integration into user-facing applications, such as trip planning tools or mobile ski advisory systems.
+
+3. Incorporate multi-modal inputs such as live camera feeds, snowpack sensor data, or satellite imagery. This would enable the system to move beyond text and tabular weather data, capturing real-world ski conditions in real-time.
 
 ## License
 
