@@ -60,6 +60,7 @@ this tool reduces information search costs and improves trip planning for skiers
 highlights the potential of LLM-based systems in domain-specific decision support applications.
 
 ## Repository Structure
+```
 ski-conditions-monitor/
 
 |-- capstoneAirflow/
@@ -95,13 +96,84 @@ ski-conditions-monitor/
 |-- app.py                  # Streamlit front-end interface
 
 |-- requirements.txt
+```
 
 ## Installation and Requirements
-1. Clone the Repository
-git clone https://github.com/your-username/ski-conditions-monitor.git
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/sarahpopeck/ski-conditions-monitor.git
 cd ski-conditions-monitor
-2. Install Dependencies
+```
+
+### 2. Set Up Python Environment
+```bash
+python3 -m venv .venv
+source .venv/bin/activate   # Mac/Linux
+# .venv\Scripts\activate    # Windows
+```
+
+### 3. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
+
+### 4. Install and Run Ollama (for LLM inference)
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+ollama serve
+ollama pull phi4-mini
+ollama pull qwen3:4b
+```
+
+### 5. Configure Environment Variables
+
+Create a `.env` file in the project root:
+
+```bash
+APIFY_TOKEN=your_apify_token_here
+AWS_ACCESS_KEY_ID=your_aws_key
+AWS_SECRET_ACCESS_KEY=your_aws_secret
+AWS_DEFAULT_REGION=us-east-1
+```
+
+### 6. Start Backend Services (Airflow, Postgres, Redis)
+```bash
+cd capstoneAirflow
+docker compose up --build
+```
+
+This will launch:
+- Apache Airflow (data pipelines)
+- PostgreSQL (data storage)
+- Redis (vector index for RAG)
+
+### 7. Run the Frontend Application
+```bash
+streamlit run app.py
+```
+
+Open in browser:
+```
+http://localhost:8501
+```
+
+### 8. (Optional) AWS Deployment
+- Launch EC2 instance
+- Install Docker and Docker Compose
+- Clone repository
+- Run:
+
+```bash
+docker compose up -d
+```
+
+Ensure IAM permissions are configured for S3 access.
+
+### Notes
+- Docker must be installed before running Airflow services
+- Ollama must be running locally for LLM-based recommendations
+- APIFY token is required for Reddit data ingestion
 
 ## Running the Application
 

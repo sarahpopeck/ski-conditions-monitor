@@ -16,3 +16,5 @@ __pycache__/
 
 # OS files
 .DS_Store
+github_link.txt
+__pycache__/RAG_architecture.cpython-313.pyc
